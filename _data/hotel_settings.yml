@@ -19,6 +19,8 @@ __EDITABLE_FIELDS__:
     required: true
   logo:
     type: image
+  logo_secondary:
+    type: image
   email:
     type: string
   phone:
