@@ -17,6 +17,18 @@
           <span class="condensed-hotel-name">{{site.data.hotel_settings.name}}</span>
         {% endif %}
       </span>
+      <span class="nav__logo-secondary"
+        data-live-edit-settings='hotel_settings'
+        data-live-edit-settings-field='logo_secondary'
+        data-live-editable-type='image'
+      >
+        {% if site.data.hotel_settings.logo_secondary and site.data.hotel_settings.logo_secondary.url and site.data.hotel_settings.logo_secondary.url != '' %}
+          {% assign logo_url = site.data.hotel_settings.logo_secondary.url_xsmall | default: site.data.hotel_settings.logo_secondary.url %}
+          <img src="{{logo_url}}" alt="{{site.data.hotel_settings.logo_url.alt | default: 'Logo' }}" />
+        {% else %}
+          <span class="condensed-hotel-name">{{site.data.hotel_settings.name}}</span>
+        {% endif %}
+      </span>
     </a>
     <ul class="nav greedy-nav__links align-items-center text-uppercase justify-content-center pr-2">
       {% assign items = site.data._menus.main.items %}

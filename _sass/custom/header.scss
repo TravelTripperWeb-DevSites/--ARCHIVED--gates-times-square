@@ -1,4 +1,5 @@
 .navbar {
+  width: 100%;
   height: auto !important;
   padding: 8px 15px;
   background: $white;
@@ -14,7 +15,7 @@
   }
 
   .navbar-brand {
-    width: 120px;
+    width: 30px;
     margin: 0;
     @include transition(.3s);
 
@@ -33,13 +34,9 @@
     position: relative;
     width: 2rem;
     height: 2rem;
-    margin: 0;
     background: transparent;
 
     @include media-breakpoint-up(md) {
-      width: 4rem;
-      height: 4rem;
-      margin-top: 3px;
       margin-right: inherit;
       margin-bottom: inherit;
     }
@@ -54,8 +51,8 @@
       content: '\f0c9';
 
       @include media-breakpoint-up(md) {
-        top: 18px;
-        color: $white;
+        top: 4px;
+        color: $primary;
       }
     }
 
@@ -67,7 +64,7 @@
       background: transparent;
 
       &:before {
-        top: 4px;
+        top: 0;
         right: 17px;
         font-size: 22px;
         font-weight: 300;
@@ -75,7 +72,6 @@
         content: '\f00d';
 
         @include media-breakpoint-up(md) {
-          top: 15px;
           right: inherit;
         }
       }
@@ -115,11 +111,9 @@
 
     &__logo-secondary {
       display: inline-block;
-      margin-top: 5px;
 
       @include media-breakpoint-up(md) {
         display: none;
-        margin-top: 0;
       }
 
       img {
@@ -129,15 +123,16 @@
     }
 
     &--device {
-      top: 100px;
-      height: calc(100vh - 153px);
-      overflow-y: scroll;
-      background: $terciary;
+      top: 53px;
+      height: calc(100vh - 53px);
+      padding: 15px 0 0;
+      overflow-y: auto;
       border: 0;
       @include transition(.3s);
 
       @include media-breakpoint-up(md) {
-        top: 169px;
+        top: 134px;
+        padding: 0;
       }
 
       li {
@@ -145,10 +140,12 @@
       }
 
       .nav__link {
-        padding: 0 15px;
-        font-family: $family-secondary;
-        font-size: $display3-size;
-        font-weight: $display3-weight;
+        margin: 0;
+        padding: 15px;
+        font-family: $family-primary;
+        font-size: $display8-size;
+        font-weight: $display2-weight;
+        border-bottom: solid 1px $gray-300;
 
         &:after {
           display: none;
@@ -164,120 +161,15 @@
   &.nav--active {
     background: $white;
     @include transition(.3s);
-
-    @include media-breakpoint-up(md) {
-      background: $quaternary;
-    }
-
-    .nav__logo {
-      display: none;
-    }
-    .nav__logo-secondary {
-      display: inline-block;
-
-      @include media-breakpoint-up(md) {
-        margin-top: 24px;
-      }
-    }
-
-    .languages {
-      li,a {
-        color: $primary;
-      }
-    }
-
   }
 
   .greedy__hidden-links {
     right: 0;
     left: 0;
-    text-align: center;
-    background: $terciary;
   }
 
   &.sticky {
     @include transition(all .3s);
-
-    .languages {
-      li,a {
-        color: $primary;
-      }
-    }
-
-    &.nav--active {
-      .nav__logo-secondary {
-        margin-top: 0;
-      }
-    }
-
-    .navbar__burger {
-      background: transparent;
-
-      &:before {
-        color: $primary;
-      }
-    }
-
-    .brand-bar {
-      .navbar-brand {
-        max-width: 142px;
-        margin: 0;
-      }
-    }
-
-    .greedy-bar {
-      position: relative;
-      right: 0;
-      left: 0;
-
-      @include media-breakpoint-up(md) {
-        position: absolute;
-        right: 0;
-        left: 0;
-      }
-    }
-
-    &.inner-page-nav {
-      .nav__logo-secondary {
-        margin-top: 0;
-      }
-    }
-
-    .nav {
-
-      // &__logo {
-      //   display: none;
-      // }
-
-      &__logo-secondary {
-        display: inline-block;
-
-      }
-
-      &--device {
-        top: 103px;
-        right: 0;
-        left: 0;
-        width: 100%;
-        opacity: 0;
-        @include transition(.3s);
-
-        @include media-breakpoint-up(md) {
-          top: 100px;
-        }
-
-        &.is-active {
-          opacity: 1;
-          @include transition(.3s);
-
-          .nav__link {
-            &:before {
-              display: none;
-            }
-          }
-        }
-      }
-    }
 
     .booking-widget-button {
       position: absolute;

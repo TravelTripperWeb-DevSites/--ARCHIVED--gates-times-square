@@ -2,12 +2,24 @@ main:
   depth: 2
   name: Top Menu
   items:
-    - page_id: index.html
     - page_id: _pages/about.html
+      label_localized:
+        en: About
     - page_id: _pages/rooms.html
+      label_localized:
+        en: Rooms
     - page_id: _pages/offers.html
+      label_localized:
+        en: Offers
+    - page_id: _pages/location.html
+      label_localized:
+        en: Location
     - page_id: _pages/gallery.html
+      label_localized:
+        en: Gallery
     - page_id: _pages/contact.html
+      label_localized:
+        en: Contact
     # - url_localized:
     #     en: https://www.google.com
     #     es: https://www.google.es
@@ -25,4 +37,3 @@ main:
     #       label_localized:
     #         en: Test
     #         es: Prueba
-    
