@@ -1,76 +1,16 @@
-.booking-widget-button {
-  position: absolute;
-  top: 9px;
-  right: 15px;
-
-  @include media-breakpoint-up(sm) {
-    top: 25px;
-  }
-
-  @include media-breakpoint-up(md) {
-    top: 30px;
-  }
-
-  .btn {
-    @include media-breakpoint-only(xs) {
-      padding: 10px 15px 8px;
-      letter-spacing: normal;
-
-      span {
-        top: 12px;
-      }
-    }
-  }
-}
-
-.languages {
-  &__nav {
-
-    li {
-      display: inline-block;
-      padding: 0 5px;
-      font-size: $display8-size;
-      font-weight: $display4-weight;
-      color: $white;
-      list-style: none;
-
-      a {
-        color: $white;
-        opacity: .5;
-      }
-    }
-  }
-}
-
 .navbar {
   height: auto !important;
-  padding: 0;
+  padding: 8px 15px;
   background: $white;
-  box-shadow: 0 1px 8px rgba(0,0,0,.2);
   @include transition(.3s);
 
   @include media-breakpoint-up(md) {
+    padding: 26px 15px;
     background: transparent;
   }
 
-  .greedy-bar {
-    max-width: 100%;
-    margin: 0 auto;
-    border-top: solid 1px $secondary;
-
-    @include media-breakpoint-up(md) {
-      max-width: 350px;
-      border-top: 0;
-    }
-
-    @include media-breakpoint-up(lg) {
-      max-width: 50%;
-    }
-
-    @include media-breakpoint-up(xl) {
-      max-width: 800px;
-    }
-
+  .container {
+    max-width: 1240px;
   }
 
   .navbar-brand {
@@ -79,7 +19,7 @@
     @include transition(.3s);
 
     @include media-breakpoint-up(md) {
-      width: 189px;
+      width: 250px;
       margin: 0 auto;
     }
 
@@ -106,11 +46,11 @@
 
     &:before {
       position: absolute;
-      top: 7px;
+      top: 3px;
       font-family: 'Font Awesome 5 Pro';
       font-size: $display6-size;
       font-weight: 400;
-      color: $primary;
+      color: $terciary;
       content: '\f0c9';
 
       @include media-breakpoint-up(md) {
@@ -146,60 +86,25 @@
 
     &__link {
       position: relative;
-      margin: 0 15px;
-      padding: 10px 0;
+      margin: 0 12px;
       font-family: $family-primary;
-      font-size: $display7-size;
-      font-weight: $display3-weight;
-      color: $primary;
-      letter-spacing: normal;
-
-      @include media-breakpoint-up(md) {
-        padding: 24px 0;
-        color: $white;
-      }
-
-      &:after {
-        position: absolute;
-        right: 0;
-        bottom: 12px;
-        left: 0;
-        display: none;
-        width: 100%;
-        height: 1px;
-        content: '';
-        background: $primary;
-        opacity: 0;
-        @include transition(.3s);
-
-        @include media-breakpoint-up(md) {
-          display: block;
-          background: $white;
-        }
-      }
+      font-size: $display8-size;
+      font-weight: $display2-weight;
+      color: $terciary;
+      text-transform: uppercase;
+      letter-spacing: 1px;
 
       &:hover, &.active {
-        color: $primary;
+        color: $quaternary;
         text-decoration: none !important;
-
-        @include media-breakpoint-up(md) {
-          color: $white;
-        }
-
-        &:after {
-          bottom: 22px;
-          opacity: 1;
-        }
       }
     }
 
     &__logo {
       display: none;
-      margin-top: 5px;
 
       @include media-breakpoint-up(md) {
         display: inline-block;
-        margin-top: 24px
       }
 
       img {
@@ -256,88 +161,6 @@
     }
   }
 
-  .brand-bar {
-    position: relative;
-    max-width: 1344px;
-    height: 61px;
-    margin: 0 auto;
-    @include transition(.3s);
-
-    @include media-breakpoint-up(md) {
-      height: 100px;
-    }
-
-    .nav {
-      display: none;
-    }
-
-    .booking-widget-button {
-      position: absolute;
-      top: inherit;
-      right: 15px;
-
-      @include media-breakpoint-up(md) {
-        top: 30px;
-      }
-    }
-  }
-
-  .subnav {
-    padding: 10px 0;
-    background: $white;
-    border: solid 1px $gray-300;
-
-    .nav__link {
-      padding: 10px 15px !important;
-      text-transform: none;
-      letter-spacing: normal;
-    }
-  }
-
-  &.inner-page-nav {
-    background: $white;
-    @include transition(.3s);
-
-    @include media-breakpoint-up(md) {
-      background: $quaternary;
-    }
-
-    .languages__nav {
-      li, a {
-        color: $primary;
-      }
-    }
-
-    .navbar__burger {
-      &:before {
-        color: $primary;
-      }
-    }
-
-    .nav {
-
-      &__link {
-        color: $primary;
-
-        &:after {
-          background: $primary;
-        }
-      }
-
-      &__logo {
-        display: none;
-      }
-      &__logo-secondary {
-        display: inline-block;
-        margin-top: 0;
-
-        @include media-breakpoint-up(md) {
-          margin-top: 24px;
-        }
-      }
-    }
-  }
-
   &.nav--active {
     background: $white;
     @include transition(.3s);
@@ -373,12 +196,7 @@
   }
 
   &.sticky {
-    background: $white;
     @include transition(all .3s);
-
-    @include media-breakpoint-up(md) {
-      background: $quaternary;
-    }
 
     .languages {
       li,a {
@@ -427,25 +245,13 @@
 
     .nav {
 
-      &__logo {
-        display: none;
-      }
+      // &__logo {
+      //   display: none;
+      // }
 
       &__logo-secondary {
         display: inline-block;
 
-      }
-
-      &__link {
-        color: $primary !important;
-
-        &:after {
-          background: $primary;
-        }
-
-        &:hover {
-          color: $primary !important;
-        }
       }
 
       &--device {
@@ -503,19 +309,19 @@
 }
 
 .is-fixed-top {
-  top: 24px !important;
+  // top: 24px !important;
 
-  .booking-widget-button {
-    top: 9px;
-
-    @include media-breakpoint-up(sm) {
-      top: 5px;
-    }
-
-    @include media-breakpoint-up(md) {
-      top: 25px;
-    }
-  }
+  // .booking-widget-button {
+  //   top: 9px;
+  //
+  //   @include media-breakpoint-up(sm) {
+  //     top: 5px;
+  //   }
+  //
+  //   @include media-breakpoint-up(md) {
+  //     top: 25px;
+  //   }
+  // }
 
   .languages {
     li,a {

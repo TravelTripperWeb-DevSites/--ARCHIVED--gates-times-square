@@ -1,8 +1,8 @@
 //    //grays
-//    $gray-100: #f8f9fa !default;
-//    $gray-200: #e9ecef !default;
-//    $gray-300: #dee2e6 !default;
-//    $gray-400: #ced4da !default;
+$gray-100: #fbf8ef !default;
+$gray-200: #efeeee !default;
+$gray-300: #d7d7d7 !default;
+$gray-400: #767676 !default;
 //    $gray-500: #adb5bd !default;
 //    $gray-600: #6c757d !default;
 //    $gray-700: #495057 !default;
@@ -10,11 +10,11 @@
 //    $gray-900: #212529 !default;
 //
 //    // colors
-$primary: #263746 !default;
-$secondary: #a9652d !default;
-$terciary: #f4f1e8 !default;
-$quaternary: #fdfcfa !default;
-$border-clr: #d8d8d8 !default;
+$primary: #005d7c !default;
+$secondary: #515151 !default;
+$terciary: #232525 !default;
+$quaternary: #0e5c7a !default;
+$border-clr: #d9d9d9 !default;
 
 
 $black: #000;
@@ -66,13 +66,13 @@ $dark: $black !default;
 //    $yiq-text-dark: $gray-900 !default;
 //    $yiq-text-light: $white !default;
 //
-//    $link-color: $base-text-color;
+$link-color: #008cc1;
 //    $link-decoration: none !default;
 //    $link-hover-color: $primary;
 //    $link-hover-decoration: underline !default;
 //
 //    // Fonts
-$family-primary: 'museo-sans',sans-serif;
+$family-primary: 'Gotham A', 'Gotham B';
 $family-secondary: 'ITC Century W01 Book Italic';
 //    $family-terciary: "Roboto", sans-serif;
 //
@@ -93,25 +93,22 @@ $base-font-size: 1rem; //1rem = 16px
 //    $font-weight-bold: 700 !default;
 //    $font-weight-bolder: bolder !default;
 //
-$display1-size: 3rem !default; //48px
-$display2-size: 2.5rem !default; //40px
-$display3-size: 2.25rem !default; //36px
-$display4-size: 1.875rem !default; //30px
-$display5-size: 1.5rem !default; //24px
+$display1-size: 4.375rem !default; //70px
+$display2-size: 2.125rem !default; //34px
+$display3-size: 1.875rem !default; //30px
+$display4-size: 1.5rem !default; //24px
+$display5-size: 1.25rem !default; //20px
 $display6-size: 1.125rem !default; //18px
 $display7-size: .875rem !default; //14px
 $display8-size: .75rem !default; //12px
 $display9-size: .625rem !default; //10px
-$display10-size: .9375rem !default; //15px
-$display11-size: .5rem !default; //8px
-
 
 //
-$display1-weight: 100 !default;
-$display2-weight: 300 !default;
+$display1-weight: 300 !default;
+$display2-weight: 400 !default;
 $display3-weight: 500 !default;
 $display4-weight: 700 !default;
-$display5-weight: 600 !default;
+// $display5-weight: 600 !default;
 //    $display-line-height: $header-line-height !default;
 //
 //    $lead-font-size: ($base-font-size * 1.25) !default;

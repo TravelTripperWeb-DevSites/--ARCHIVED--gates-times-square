@@ -1,72 +1,87 @@
 
-.h1,.h2,.h3,.h4,.h5, .h6 {
+.h1,.h2,.h3,.h4,.h5,.h6 {
   display: block;
   margin: 0;
+  font-family: $family-primary;
   font-weight: normal;
 }
 
 .h1 {
-  font-family: $family-secondary;
   font-size: $display2-size;
-  line-height: 48px;
-  color: $primary;
+  font-weight: $display1-weight;
+  color: $white;
+  text-transform: uppercase;
   letter-spacing: normal;
 
   @include media-breakpoint-up(md) {
     font-size: $display1-size;
-    line-height: 54px;
+    letter-spacing: 6px;
   }
 }
 
 .h2 {
-  font-family: $family-secondary;
-  font-size: $display3-size;
-  line-height: 48px;
-  color: $primary;
+  font-size: $display5-size;
+  font-weight: $display1-weight;
+  color: $terciary;
   letter-spacing: normal;
+
+  @include media-breakpoint-up(md) {
+    font-size: $display2-size;
+  }
 }
 
 .h3 {
-  font-family: $family-primary;
   font-size: $display4-size;
-  font-weight: $display1-weight;
-  line-height: 36px;
-  color: $primary;
-  text-transform: uppercase;
-  letter-spacing: normal;
-}
-
-.h4 {
-  font-family: $family-secondary;
-  font-size: $display5-size;
-  line-height: 30px;
-  color: $primary;
-  letter-spacing: normal;
-}
-
-.overline {
-  margin: 0;
-  font-family: $family-primary;
-  font-size: $display8-size;
-  font-weight: $display3-weight;
-  line-height: 18px;
-  color: $primary;
+  font-weight: $display4-weight;
+  color: $terciary;
   text-transform: uppercase;
   letter-spacing: 2px;
 }
 
+.h4 {
+  font-size: $display5-size;
+  font-weight: $display4-weight;
+  color: $terciary;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.h5 {
+  font-size: $display7-size;
+  font-weight: $display3-weight;
+  color: $terciary;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.h6 {
+  font-size: $display8-size;
+  font-weight: $display3-weight;
+  color: $terciary;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.overline {
+  font-family: $family-primary;
+  font-size: $display7-size;
+  font-weight: $display1-weight;
+  color: $terciary;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+
+  &--small {
+    font-size: $display8-size;
+  }
+}
+
 p {
   font-family: $family-primary;
-  font-size: $base-font-size;
-  font-weight: $display2-weight;
+  font-size: $display8-size;
+  font-weight: $display1-weight;
   line-height: 24px;
-  color: $primary;
-  letter-spacing: normal;
-
-  &.small {
-    font-size: $display7-size;
-    line-height: 18px;
-  }
+  color: $secondary;
+  letter-spacing: 1px;
 
   a {
     text-decoration: underline;
@@ -78,5 +93,5 @@ p {
 }
 
 .dark {
-  color: $black !important;
+  color: $terciary !important;
 }
