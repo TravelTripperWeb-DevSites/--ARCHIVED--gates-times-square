@@ -64,30 +64,30 @@ logo:
   resource_type: image
   size: 12780
   path: "//res.cloudinary.com/traveltripperweb/image/upload/c_limit,h_2500,w_2500/v1565348224/r7dmgzuxfis9iwwsishu.png"
-  file_size:
+  file_size: 
   alt: gates-hotel-times-sqaure
   caption: ''
   description: ''
 logo_secondary:
-  name: gates-hotel-times-sqaure
+  name: gates-hotel-times-square-secondary-logo
   content_type: image/png
-  date_added: 2019-08-09-065704
-  url_thumb: "//res.cloudinary.com/traveltripperweb/image/upload/c_fill,g_faces,h_140,w_140/v1565348224/r7dmgzuxfis9iwwsishu.png"
-  url_xsmall: "//res.cloudinary.com/traveltripperweb/image/upload/c_fit,h_300,w_300/v1565348224/r7dmgzuxfis9iwwsishu.png"
-  url_small: "//res.cloudinary.com/traveltripperweb/image/upload/c_fit,h_768,w_768/v1565348224/r7dmgzuxfis9iwwsishu.png"
-  url_medium: "//res.cloudinary.com/traveltripperweb/image/upload/c_fit,h_992,w_992/v1565348224/r7dmgzuxfis9iwwsishu.png"
-  url_large: "//res.cloudinary.com/traveltripperweb/image/upload/c_fit,h_1200,w_1200/v1565348224/r7dmgzuxfis9iwwsishu.png"
-  url_xlarge: "//res.cloudinary.com/traveltripperweb/image/upload/c_limit,h_1920,w_1920/v1565348224/r7dmgzuxfis9iwwsishu.png"
-  url: "//res.cloudinary.com/traveltripperweb/image/upload/c_limit,h_2500,w_2500/v1565348224/r7dmgzuxfis9iwwsishu.png"
-  width: 437
-  height: 130
+  date_added: 2019-08-09-075255
+  url_thumb: "//res.cloudinary.com/traveltripperweb/image/upload/c_fill,g_faces,h_140,w_140/v1565351575/ehpnego5hnqlfkncyy93.png"
+  url_xsmall: "//res.cloudinary.com/traveltripperweb/image/upload/c_fit,h_300,w_300/v1565351575/ehpnego5hnqlfkncyy93.png"
+  url_small: "//res.cloudinary.com/traveltripperweb/image/upload/c_fit,h_768,w_768/v1565351575/ehpnego5hnqlfkncyy93.png"
+  url_medium: "//res.cloudinary.com/traveltripperweb/image/upload/c_fit,h_992,w_992/v1565351575/ehpnego5hnqlfkncyy93.png"
+  url_large: "//res.cloudinary.com/traveltripperweb/image/upload/c_fit,h_1200,w_1200/v1565351575/ehpnego5hnqlfkncyy93.png"
+  url_xlarge: "//res.cloudinary.com/traveltripperweb/image/upload/c_limit,h_1920,w_1920/v1565351575/ehpnego5hnqlfkncyy93.png"
+  url: "//res.cloudinary.com/traveltripperweb/image/upload/c_limit,h_2500,w_2500/v1565351575/ehpnego5hnqlfkncyy93.png"
+  width: 114
+  height: 112
   format: png
-  url_raw: "//res.cloudinary.com/traveltripperweb/image/upload/v1565348224/r7dmgzuxfis9iwwsishu.png"
+  url_raw: "//res.cloudinary.com/traveltripperweb/image/upload/v1565351575/ehpnego5hnqlfkncyy93.png"
   resource_type: image
-  size: 12780
-  path: "//res.cloudinary.com/traveltripperweb/image/upload/c_limit,h_2500,w_2500/v1565348224/r7dmgzuxfis9iwwsishu.png"
-  file_size:
-  alt: gates-hotel-times-sqaure
+  size: 5603
+  path: "//res.cloudinary.com/traveltripperweb/image/upload/c_limit,h_2500,w_2500/v1565351575/ehpnego5hnqlfkncyy93.png"
+  file_size: 
+  alt: gates-hotel-times-square-secondary-logo
   caption: ''
   description: ''
 phone: 212.768.3700
