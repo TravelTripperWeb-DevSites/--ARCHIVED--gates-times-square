@@ -1,17 +1,20 @@
 .navbar {
   width: 100%;
   height: auto !important;
-  padding: 8px 15px;
+  padding: 0;
   background: $white;
   @include transition(.3s);
 
-  @include media-breakpoint-up(md) {
-    padding: 26px 15px;
-    background: transparent;
-  }
-
   .container {
     max-width: 1240px;
+  }
+
+  &__inner {
+    padding: 8px 15px;
+
+    @include media-breakpoint-up(md) {
+      padding: 26px 15px;
+    }
   }
 
   .navbar-brand {
@@ -188,15 +191,11 @@
 }
 
 .is-fixed-top+.main {
-  padding-top: 127px;
+  padding-top: 137px;
   @include transition(all .3s);
 
   @include media-breakpoint-up(md) {
-    padding-top: 0;
-  }
-
-  &.inner-page-body {
-    padding-top: 0;
+    padding-top: 180px;
   }
 }
 
