@@ -3,7 +3,8 @@
 {% endcomment %}
 
 <nav class="navbar greedy is-fixed-top nav--main" id="js-navbar--main">
-  <div class="container p-0 flex-nowrap">
+  {% include top-banner.html %}
+  <div class="container flex-nowrap navbar__inner">
     <a class="navbar-brand" href="/">
       <span class="nav__logo"
         data-live-edit-settings='hotel_settings'
