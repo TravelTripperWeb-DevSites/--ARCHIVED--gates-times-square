@@ -10,13 +10,21 @@ readyDoc(function () {
   // Home page hero carousel
   if (document.getElementsByClassName("home-hero-slider")[0]) {
     var offersSlider = tns({
-      container: '.home-hero-slider',
-      "items": 1.5,
-      "slideBy": 1.5,
+      "container": '.home-hero-slider__inner',
+      "items": 1,
+      "slideBy": "page",
       "mouseDrag": true,
-      "swipeAngle": false,
+      "swipeAngle": true,
       "speed": 400,
-      "nav": false
+      "nav": false,
+      "prevButton": "#homeSliderPrev",
+      "nextButton": "#homeSliderNext",
+      "responsive": {
+        "768": {
+          "items": 1.5,
+          "slideBy": "page"
+        }
+      }
     });
   }
 });

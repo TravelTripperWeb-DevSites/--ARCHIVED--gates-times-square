@@ -1,31 +1,108 @@
 .home-hero-slider {
   &__item {
     position: relative;
-    margin: 0 8px;
+    opacity: .5;
+    @include media-breakpoint-up(md) {
+      margin: 0 8px;
+    }
+    &.tns-slide-active {
+      opacity: 1;
+    }
   }
   &__logo {
     @include vertical-center;
     right: 0;
     left: 0;
+    width: 180px;
+    margin: auto;
     text-align: center;
+    @include media-breakpoint-up(md) {
+      width: 250px;
+    }
+    @include media-breakpoint-up(lg) {
+      width: 300px;
+    }
+  }
+  &__image {
+    position: relative;
+    height: 350px;
+    &::after {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      content: '';
+      background-color: rgba($black, .2);
+    }
+    @include media-breakpoint-up(md) {
+      height: 500px;
+    }
+    @include media-breakpoint-up(lg) {
+      height: 750px;
+    }
   }
   &__social-links {
     position: absolute;
     right: 0;
-    bottom: 0;
+    bottom: 20px;
     left: 0;
     z-index: 9;
     margin: auto;
     text-align: center;
+    @include media-breakpoint-up(md) {
+      bottom: 30px;
+    }
+    .overline {
+      margin-bottom: 5px;
+      @include media-breakpoint-up(md) {
+        margin-bottom: 30px;
+      }
+    }
     ul {
       margin: 0;
       padding: 0;
       li {
+        position: relative;
         display: inline-block;
+        width: 25px;
+        padding: 0 25px;
+        @include media-breakpoint-up(md) {
+          padding: 0 40px;
+        }
+        &::after {
+          position: absolute;
+          top: 10px;
+          left: 50px;
+          width: 20px;
+          height: 1px;
+          content: '';
+          background-color: $white;
+          @include media-breakpoint-up(md) {
+            left: 73px;
+            width: 30px;
+          }
+        }
         a {
           color: $white;
         }
+        &:last-child {
+          &::after {
+            width: 0;
+          }
+        }
       }
     }
+  }
+}
+.home-slider-control {
+  .prev-slide, .next-slide {
+    @include vertical-center;
+  }
+  .prev-slide {
+    left: 30px;
+  }
+  .next-slide {
+    right: 30px;
   }
 }
