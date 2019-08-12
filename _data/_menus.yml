@@ -37,3 +37,16 @@ main:
     #       label_localized:
     #         en: Test
     #         es: Prueba
+footer:
+  depth: 2
+  name: Footer Menu
+  items:
+    - page_id: _pages/privacy.html
+      label_localized:
+        en: Privacy Policy
+    - page_id: _pages/terms.html
+      label_localized:
+        en: Terms of Use
+    - page_id: _pages/accessibility.html
+      label_localized:
+        en: Accessibility Statement
