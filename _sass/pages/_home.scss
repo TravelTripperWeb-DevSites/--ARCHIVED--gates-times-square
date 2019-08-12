@@ -1,0 +1,31 @@
+.home-hero-slider {
+  &__item {
+    position: relative;
+    margin: 0 8px;
+  }
+  &__logo {
+    @include vertical-center;
+    right: 0;
+    left: 0;
+    text-align: center;
+  }
+  &__social-links {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 9;
+    margin: auto;
+    text-align: center;
+    ul {
+      margin: 0;
+      padding: 0;
+      li {
+        display: inline-block;
+        a {
+          color: $white;
+        }
+      }
+    }
+  }
+}
