@@ -14,15 +14,16 @@ readyDoc(function () {
       "items": 1,
       "slideBy": "page",
       "mouseDrag": true,
-      "swipeAngle": true,
+      "swipeAngle": false,
       "speed": 400,
       "nav": false,
+      "edgePadding": "30%",
       "prevButton": "#homeSliderPrev",
       "nextButton": "#homeSliderNext",
       "responsive": {
         "768": {
           "items": 1.5,
-          "slideBy": "page"
+          "slideBy": 1
         }
       }
     });
