@@ -13,12 +13,25 @@
   &__tag-link {
     margin: 20px 0 10px;
     @extend .h2;
-    text-transform: none !important;
+    @extend .overline;
 
+    a {
+      &:hover {
+        text-decoration: none;
+      }
+    }
   }
 
   &__profile-link {
     margin-bottom: 30px;
+    color: $terciary;
+    @extend .h4;
+
+    a {
+      &:hover {
+        text-decoration: none;
+      }
+    }
   }
 
   .c-instagram-feed__list {
@@ -96,17 +109,4 @@
       }
     }
   }
-}
-
-.c-instagram-feed__profile-link {
-  @extend .h4;
-}
-
-.c-instagram-feed__tag-link {
-  @extend .h5;
-  text-transform: uppercase;
-  // &:before {
-  //   font-family: "Font Awesome 5 Free";
-  //   content: '\f16d';
-  // }
 }
