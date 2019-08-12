@@ -1,3 +1,15 @@
-<div class="copyright m-2">
-  &copy; {{ "now" | date: "%Y" }}
-</div>
+<footer class="footer">
+  <div class="footer__wrap">
+    <div class="footer__row">
+      <div class="footer__logo">
+        <img src="//res.cloudinary.com/traveltripperweb/image/upload/c_limit,h_2500,w_2500/v1565589779/uy0wygw6lknoy7ghvq9y.jpg" alt="Gates Hotel Times Square">
+      </div>
+      <div class="footer__contact">
+        <p class="h6">Contact Us</p>
+        <p><a href="{{ site.data.hotel_settings.get_directions_url }}" target="_blank">{{ site.data.hotel_settings.address.street1 }}<br>{{ site.data.hotel_settings.address.state }}, {{ site.data.hotel_settings.address.city }} {{ site.data.hotel_settings.address.zip_code }}<br>{{ site.data.hotel_settings.address.country }}</a></p>
+      </div>
+      <div class="footer__links"></div>
+      <div class="footer__newsletter"></div>
+    </div>
+  </div>
+</footer>

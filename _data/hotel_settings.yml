@@ -46,6 +46,7 @@ __EDITABLE_FIELDS__:
     type: float
   longitude:
     type: float
+get_directions_url: https://goo.gl/maps/d9c5eEciAtAALBGd6
 logo:
   name: gates-hotel-times-sqaure
   content_type: image/png
@@ -64,7 +65,7 @@ logo:
   resource_type: image
   size: 12780
   path: "//res.cloudinary.com/traveltripperweb/image/upload/c_limit,h_2500,w_2500/v1565348224/r7dmgzuxfis9iwwsishu.png"
-  file_size: 
+  file_size:
   alt: gates-hotel-times-sqaure
   caption: ''
   description: ''
@@ -86,7 +87,7 @@ logo_secondary:
   resource_type: image
   size: 5603
   path: "//res.cloudinary.com/traveltripperweb/image/upload/c_limit,h_2500,w_2500/v1565351575/ehpnego5hnqlfkncyy93.png"
-  file_size: 
+  file_size:
   alt: gates-hotel-times-square-secondary-logo
   caption: ''
   description: ''
