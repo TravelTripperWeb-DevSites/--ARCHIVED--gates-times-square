@@ -107,3 +107,24 @@
     right: 30px;
   }
 }
+
+.home-attractions-slider {
+  position: relative;
+  &__item {
+    position: relative;
+  }
+  &__content {
+    @include vertical-center;
+    right: 0;
+    left: 0;
+    width: 180px;
+    margin: auto;
+    text-align: center;
+    @include media-breakpoint-up(md) {
+      width: 250px;
+    }
+    @include media-breakpoint-up(lg) {
+      width: 300px;
+    }
+  }
+}

@@ -31,4 +31,18 @@ readyDoc(function() {
       }
     });
   }
+  // Home page pages carousel
+  if (document.getElementsByClassName("pages-slider")[0]) {
+    var offersSlider = tns({
+      "container": '.pages-slider__inner',
+      "items": 1,
+      "slideBy": "page",
+      "mouseDrag": true,
+      "swipeAngle": true,
+      "speed": 400,
+      "nav": false,
+      "prevButton": "#pagesSliderPrev",
+      "nextButton": "#pagesSliderNext",
+    });
+  }
 });

@@ -45,4 +45,33 @@ layout: default
     </a>
   </div>
 </section>
+
+<section class="pages-slider">
+  <div class="pages-slider__inner">
+    {% assign pagesSlides = site.data._models.pages-carousel | sort: "order" | reverse %}
+    {% for pagesSlide in pagesSlides %}
+      <div class="pages-slider__item">
+        <div class="pages-slider__image objectfit">
+          <img src="{{pagesSlide.image.url_large}}" alt="{{pagesSlide.image.alt}}">
+        </div>
+        <div class="pages-slider__content">
+          <img src="//res.cloudinary.com/traveltripperweb/image/upload/c_limit,h_2500,w_2500/v1565608401/bh704eqrcwffd8x2okse.png" alt="Gates Logo">
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+  <div class="home-slider-control">
+    <a href="javascript:void(0);" id="pagesSliderPrev" class="prev-slide" title="Previous Slide" tabindex="-1">
+      <span class="prev">
+        <i class="fal fa-chevron-left"></i>
+      </span>
+    </a>
+    <a href="javascript:void(0);" id="pagesSliderNext" class="next-slide" title="Next Slide" tabindex="-1">
+      <span class="next">
+        <i class="fal fa-chevron-right"></i>
+      </span>
+    </a>
+  </div>
+</section>
+
 {% region intro, type:mixed %}
