@@ -14,18 +14,37 @@ readyDoc(function () {
       "items": 1,
       "slideBy": "page",
       "mouseDrag": true,
-      "swipeAngle": false,
+      "swipeAngle": true,
       "speed": 400,
       "nav": false,
-      "edgePadding": "30%",
       "prevButton": "#homeSliderPrev",
       "nextButton": "#homeSliderNext",
       "responsive": {
         "768": {
           "items": 1.5,
+          "edgePadding": 45,
+          "slideBy": 1
+        },
+        "992": {
+          "items": 1.2,
+          "edgePadding": 120,
           "slideBy": 1
         }
       }
+    });
+  }
+  // Home page pages carousel
+  if (document.getElementsByClassName("pages-slider")[0]) {
+    var offersSlider = tns({
+      "container": '.pages-slider__inner',
+      "items": 1,
+      "slideBy": "page",
+      "mouseDrag": true,
+      "swipeAngle": true,
+      "speed": 400,
+      "nav": false,
+      "prevButton": "#pagesSliderPrev",
+      "nextButton": "#pagesSliderNext"
     });
   }
 });

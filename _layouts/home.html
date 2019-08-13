@@ -3,81 +3,34 @@ layout: default
 ---
 <section class="home-hero-slider">
   <div class="home-hero-slider__inner">
-    <div class="home-hero-slider__item">
-      <div class="home-hero-slider__image objectfit">
-        <img src="//res.cloudinary.com/traveltripperweb/image/upload/c_limit,h_2500,w_2500/v1565603172/wmnfab7tfsiozwrcggmh.jpg" alt="Lobby Area">
+    {% assign homeSlides = site.data._models.home-slider | sort: "order" | reverse %}
+    {% for homeSlide in homeSlides %}
+      <div class="home-hero-slider__item">
+        <div class="home-hero-slider__image objectfit">
+          <img src="{{homeSlide.image.url_xlarge}}" alt="{{homeSlide.image.alt}}">
+        </div>
+        <div class="home-hero-slider__logo objectfit">
+          <img src="//res.cloudinary.com/traveltripperweb/image/upload/c_limit,h_2500,w_2500/v1565608401/bh704eqrcwffd8x2okse.png" alt="Gates Logo">
+        </div>
+        <div class="home-hero-slider__social-links">
+          <p class="overline overline--small light">Follow Us</p>
+          <ul>
+            <li><a href="https://www.facebook.com/NightHotelTSQ">
+              <i class="fab fa-facebook-f"></i>
+            </a></li>
+            <li><a href="https://twitter.com/NightHotelTSQ">
+              <i class="fab fa-twitter"></i>
+            </a></li>
+            <li><a href="https://instagram.com/night_hotels">
+              <i class="fab fa-instagram"></i>
+            </a></li>
+            <li><a href="https://plus.google.com/104877954400890497245/posts">
+              <i class="fab fa-google-plus-g"></i>
+            </a></li>
+          </ul>
+        </div>
       </div>
-      <div class="home-hero-slider__logo objectfit">
-        <img src="//res.cloudinary.com/traveltripperweb/image/upload/c_limit,h_2500,w_2500/v1565608401/bh704eqrcwffd8x2okse.png" alt="Gates Logo">
-      </div>
-      <div class="home-hero-slider__social-links">
-        <p class="overline overline--small light">Follow Us</p>
-        <ul>
-          <li><a href="https://www.facebook.com/NightHotelTSQ">
-            <i class="fab fa-facebook-f"></i>
-          </a></li>
-          <li><a href="https://twitter.com/NightHotelTSQ">
-            <i class="fab fa-twitter"></i>
-          </a></li>
-          <li><a href="https://instagram.com/night_hotels">
-            <i class="fab fa-instagram"></i>
-          </a></li>
-          <li><a href="https://plus.google.com/104877954400890497245/posts">
-            <i class="fab fa-google-plus-g"></i>
-          </a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="home-hero-slider__item">
-      <div class="home-hero-slider__image objectfit">
-        <img src="//res.cloudinary.com/traveltripperweb/image/upload/c_limit,h_2500,w_2500/v1565603171/qhzwh99rzev3xfwcyd8j.jpg" alt="Aspen">
-      </div>
-      <div class="home-hero-slider__logo objectfit">
-        <img src="//res.cloudinary.com/traveltripperweb/image/upload/c_limit,h_2500,w_2500/v1565608401/bh704eqrcwffd8x2okse.png" alt="Gates Logo">
-      </div>
-      <div class="home-hero-slider__social-links">
-        <p class="overline overline--small light">Follow Us</p>
-        <ul>
-          <li><a href="https://www.facebook.com/NightHotelTSQ">
-            <i class="fab fa-facebook-f"></i>
-          </a></li>
-          <li><a href="https://twitter.com/NightHotelTSQ">
-            <i class="fab fa-twitter"></i>
-          </a></li>
-          <li><a href="https://instagram.com/night_hotels">
-            <i class="fab fa-instagram"></i>
-          </a></li>
-          <li><a href="https://plus.google.com/104877954400890497245/posts">
-            <i class="fab fa-google-plus-g"></i>
-          </a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="home-hero-slider__item">
-      <div class="home-hero-slider__image objectfit">
-        <img src="//res.cloudinary.com/traveltripperweb/image/upload/c_limit,h_2500,w_2500/v1565603170/gahuo6qctg8ykxnmbezr.jpg" alt="Deluxe King Bed">
-      </div>
-      <div class="home-hero-slider__logo objectfit">
-        <img src="//res.cloudinary.com/traveltripperweb/image/upload/c_limit,h_2500,w_2500/v1565608401/bh704eqrcwffd8x2okse.png" alt="Gates Logo">
-      </div>
-      <div class="home-hero-slider__social-links">
-        <p class="overline overline--small light">Follow Us</p>
-        <ul>
-          <li><a href="https://www.facebook.com/NightHotelTSQ">
-            <i class="fab fa-facebook-f"></i>
-          </a></li>
-          <li><a href="https://twitter.com/NightHotelTSQ">
-            <i class="fab fa-twitter"></i>
-          </a></li>
-          <li><a href="https://instagram.com/night_hotels">
-            <i class="fab fa-instagram"></i>
-          </a></li>
-          <li><a href="https://plus.google.com/104877954400890497245/posts">
-            <i class="fab fa-google-plus-g"></i>
-          </a></li>
-        </ul>
-      </div>
-    </div>
+    {% endfor %}
   </div>
   <div class="home-slider-control">
     <a href="javascript:void(0);" id="homeSliderPrev" class="prev-slide" title="Previous Slide" tabindex="-1">
@@ -92,4 +45,35 @@ layout: default
     </a>
   </div>
 </section>
+
+<section class="pages-slider">
+  <div class="pages-slider__inner">
+    {% assign pagesSlides = site.data._models.pages-carousel | sort: "order" | reverse %}
+    {% for pagesSlide in pagesSlides %}
+      <div class="pages-slider__item">
+        <div class="pages-slider__image objectfit">
+          <img src="{{pagesSlide.image.url_xlarge}}" alt="{{pagesSlide.image.alt}}">
+        </div>
+        <div class="pages-slider__content">
+          <p class="h3">{{pagesSlide.title}}</p>
+          <p class="pages-slider__content__description">{{pagesSlide.description}}</p>
+          <a class="btn btn--primary" href="{{pagesSlide.button_link}}">{{pagesSlide.button_text}}</a>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+  <div class="home-slider-control">
+    <a href="javascript:void(0);" id="pagesSliderPrev" class="prev-slide" title="Previous Slide" tabindex="-1">
+      <span class="prev">
+        <i class="fal fa-chevron-left"></i>
+      </span>
+    </a>
+    <a href="javascript:void(0);" id="pagesSliderNext" class="next-slide" title="Next Slide" tabindex="-1">
+      <span class="next">
+        <i class="fal fa-chevron-right"></i>
+      </span>
+    </a>
+  </div>
+</section>
+
 {% region intro, type:mixed %}

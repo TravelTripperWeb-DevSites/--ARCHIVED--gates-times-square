@@ -4,7 +4,7 @@
     position: relative;
     opacity: .5;
     @include media-breakpoint-up(md) {
-      padding: 0 8px;
+      margin: 0 10px;
     }
     &.tns-slide-active {
       opacity: 1;
@@ -105,5 +105,62 @@
   }
   .next-slide {
     right: 30px;
+  }
+}
+
+.pages-slider {
+  position: relative;
+  &__item {
+    position: relative;
+  }
+  &__image {
+    position: relative;
+    height: 350px;
+    &::after {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      content: '';
+      background-color: rgba($black, .2);
+    }
+    @include media-breakpoint-up(md) {
+      height: 400px;
+    }
+    @include media-breakpoint-up(lg) {
+      height: 600px;
+    }
+  }
+  &__content {
+    @include vertical-center;
+    right: 0;
+    left: 0;
+    width: 250px;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+    background-color: rgba($white, .7);
+    @include media-breakpoint-up(md) {
+      width: 350px;
+      padding: 30px;
+    }
+    @include media-breakpoint-up(lg) {
+      width: 470px;
+      padding: 70px;
+    }
+    .h3 {
+      margin-bottom: 20px;
+    }
+    &__description {
+      display: none;
+      margin: 10px 0 30px;
+      @include media-breakpoint-up(sm) {
+        display: block;
+      }
+    }
+    .btn--primary {
+      margin: 0;
+    }
   }
 }

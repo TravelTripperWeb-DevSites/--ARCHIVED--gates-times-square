@@ -12,8 +12,8 @@ address:
   zip_code: '10036'
 default_currency: USD
 default_timezone: America/New_York
-_hotel_id: RAHUL
-_portal_id: Rahul
+_hotel_id: KEYSGH
+_portal_id: gateshotelkeywest
 __EDITABLE_FIELDS__:
   name:
     required: true
