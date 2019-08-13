@@ -12,16 +12,21 @@ readyDoc(function() {
       "items": 1,
       "slideBy": "page",
       "mouseDrag": true,
-      "swipeAngle": false,
+      "swipeAngle": true,
       "speed": 400,
       "nav": false,
-      "edgePadding": "30%",
       "prevButton": "#homeSliderPrev",
       "nextButton": "#homeSliderNext",
       "responsive": {
         "768": {
           "items": 1.5,
-          "slideBy": 1,
+          "edgePadding": 45,
+          "slideBy": 1
+        },
+        "992": {
+          "items": 1.2,
+          "edgePadding": 120,
+          "slideBy": 1
         }
       }
     });

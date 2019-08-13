@@ -4,7 +4,7 @@
     position: relative;
     opacity: .5;
     @include media-breakpoint-up(md) {
-      padding: 0 8px;
+      margin: 0 10px;
     }
     &.tns-slide-active {
       opacity: 1;
