@@ -1,0 +1,9 @@
+{
+  "image": {
+    "type": "image",
+    "label": "Main Image"
+  },
+  "order": {
+    "type": "number"
+  }
+}
