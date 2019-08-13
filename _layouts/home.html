@@ -7,7 +7,7 @@ layout: default
     {% for homeSlide in homeSlides %}
       <div class="home-hero-slider__item">
         <div class="home-hero-slider__image objectfit">
-          <img src="{{homeSlide.image.url_large}}" alt="{{homeSlide.image.alt}}">
+          <img src="{{homeSlide.image.url_xlarge}}" alt="{{homeSlide.image.alt}}">
         </div>
         <div class="home-hero-slider__logo objectfit">
           <img src="//res.cloudinary.com/traveltripperweb/image/upload/c_limit,h_2500,w_2500/v1565608401/bh704eqrcwffd8x2okse.png" alt="Gates Logo">
@@ -52,10 +52,12 @@ layout: default
     {% for pagesSlide in pagesSlides %}
       <div class="pages-slider__item">
         <div class="pages-slider__image objectfit">
-          <img src="{{pagesSlide.image.url_large}}" alt="{{pagesSlide.image.alt}}">
+          <img src="{{pagesSlide.image.url_xlarge}}" alt="{{pagesSlide.image.alt}}">
         </div>
         <div class="pages-slider__content">
-          <img src="//res.cloudinary.com/traveltripperweb/image/upload/c_limit,h_2500,w_2500/v1565608401/bh704eqrcwffd8x2okse.png" alt="Gates Logo">
+          <p class="h3">{{pagesSlide.title}}</p>
+          <p class="pages-slider__content__description">{{pagesSlide.description}}</p>
+          <a class="btn btn--primary" href="{{pagesSlide.button_link}}">{{pagesSlide.button_text}}</a>
         </div>
       </div>
     {% endfor %}
