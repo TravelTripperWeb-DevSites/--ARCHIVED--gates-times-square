@@ -1,0 +1,44 @@
+// Offers Page Elements
+// ==========================================================================
+
+.c-offer-list {
+  width: auto;
+  max-width: 1260px;
+  .c-offer {
+    @include media-breakpoint-up(md) {
+      @include make-col(4);
+    }
+    &__description, &__rate-post-label, &__rate, &__rate-pre-label, .ttweb-cross-out-rate__actual, .ttweb-booking-button-offer span {
+      display: none;
+    }
+    &__image {
+      height: 220px;
+      margin-bottom: 25px;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        font-family: 'object-fit: cover;';
+      }
+    }
+    &__name {
+      padding-bottom: 20px;
+      @include media-breakpoint-up(md) {
+        min-height: 92px;
+      }
+    }
+    &__short-description {
+      @include media-breakpoint-up(md) {
+        min-height: 110px;
+      }
+    }
+    &__select {
+      a {
+        width: auto;
+      }
+    }
+    .ttweb-booking-button-offer {
+      display: block;
+    }
+  }
+}
