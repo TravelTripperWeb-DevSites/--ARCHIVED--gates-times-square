@@ -1,2 +1,89 @@
 // Rooms & Room Details Page Elements
 // ==========================================================================
+
+.c-room-list {
+  max-width: 1240px;
+
+  &__items {
+    @include make-row;
+  }
+  .c-room {
+    @include make-col-ready;
+    margin: 0 0 50px;
+
+    @include media-breakpoint-up(md) {
+      @include make-col(4);
+    }
+
+    .ttweb-room {
+      display: block;
+    }
+
+    &__featured-image {
+      display: block;
+      height: 295px;
+      overflow: hidden;
+
+      &:hover {
+        img {
+          transform: scale(1.1);
+        }
+      }
+
+      img {
+        @include transition(.3s);
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    &__text-group {
+      flex: none;
+      justify-content: normal;
+      max-width: none;
+
+      .ttweb-booking-button {
+        @extend .btn--primary;
+      }
+
+      .ttweb-cross-out-rate__actual {
+        font-size: $display4-size;
+        font-weight: 300;
+        color: $link-text;
+      }
+    }
+
+    &__image-group {
+      flex: none;
+      max-width: none;
+      margin-bottom: 24px;
+      padding-right: 0;
+      padding-left: 0;
+    }
+
+    &:nth-child(even) {
+      .c-room__image-group {
+        order: unset;
+      }
+
+      &__text-group {
+        order: unset;
+      }
+    }
+
+    &__name {
+      margin-bottom: 24px;
+    }
+
+    &__short-description {
+      @include media-breakpoint-up(md) {
+        max-width: 90%;
+      }
+    }
+
+    &__tonightrate {
+      margin-bottom: 24px;
+    }
+  }
+}
