@@ -46,6 +46,33 @@ layout: default
   </div>
 </section>
 
+<section class="home-page-intro">
+  <div class="home-page-intro__wrap">
+    <div class="home-page-intro__left">
+      <div class="home-page-intro__left__content">
+        <p class="h3">WELCOME TO PARADISE</p>
+        <p>Welcome to a sun-soaked paradise. Stay with us at The Gates, and discover the history and soul of Key West. Our local touches immerse you in the art of island living, through design, music and, of course, food and drink. Bring your furry friends along, because we're also pet friendly! But be warned, you might never want to leave.</p> <p>The Gates Hotel Key West welcomes guests of all abilities. Our property descriptions aim to allow any visitor to make an informed decision on whether the hotel is an appropriate choice for their needs. For more information, please see our Accessibility Statement.</p>
+      </div>
+      <div class="home-page-intro__left__weather-widget">
+        <div class="home-page-intro__left__weather-widget__bg objectfit">
+          <img src="//res.cloudinary.com/traveltripperweb/image/upload/c_limit,h_2500,w_2500/v1566135055/vbanbj2or4pxrcjoawmi.jpg" alt="Weather Widget background">
+        </div>
+        <div class="weather-widget-box">
+          <div class="weather" id="weather"></div>
+        </div>
+      </div>
+    </div>
+    <div class="home-page-intro__right">
+      <div class="home-page-intro__right__gallery">
+
+      </div>
+      <div class="home-page-intro__right__amenity">
+
+      </div>
+    </div>
+  </div>
+</section>
+
 <section class="rooms-carousel">
   <div class="rooms-carousel__inner">
     {% assign rooms = site.data._models.rooms | sort: "order" | reverse %}
@@ -87,6 +114,8 @@ layout: default
     </a>
   </div>
 </section>
+
+{% include offers-carousel.html %}
 
 <section class="pages-slider">
   <div class="pages-slider__inner">
