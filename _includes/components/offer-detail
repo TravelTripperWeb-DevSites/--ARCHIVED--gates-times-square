@@ -1,6 +1,18 @@
 {% assign sync = include.sync_content %}
+{% assign offers = site.data._models.offers | sort: "order" %}
+{% assign sync = true %}
 
-<div class="c-offer-details" data-tt-rate-code="{{offer.reztrip_offer_id}}" ttweb-component="Offer">
+<div class="offers-nav mb-5">
+  <ul>
+    {% for offer in offers %}
+    <li>
+      <a href="{{ offer.id | permalink: model_dir: 'offers' }}" data-item="{{forloop.index0}}" class="{% if forloop.index == 1 %} active {% endif %}" {% if sync %}ttweb-offer-component="OfferTitle"{% endif %}>{{offer.name}}</a>
+    </li>
+    {% endfor %}
+  </ul>
+</div>
+
+<div class="c-offer-details mb-5" data-tt-rate-code="{{offer.reztrip_offer_id}}" ttweb-component="Offer">
   <div class="c-offer-details__content text-center">
     <p class="overline">SPECIAL OFFER</p>
     <div class="c-offer-details__name h2 text-uppercase">
@@ -24,6 +36,6 @@
     </div>
   </div>
   <div class="c-offer-details__image" {% if sync %}ttweb-offer-component="OfferImage"{% endif %}>
-    {% include components/image image=offer.image max_width=600 %}
+    {% include components/image image=offer.image max_width=1200 %}
   </div>
 </div>
