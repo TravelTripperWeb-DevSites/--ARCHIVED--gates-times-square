@@ -39,3 +39,5 @@
     {% include components/image image=offer.image max_width=1200 %}
   </div>
 </div>
+
+{% include offers-carousel.html %}
