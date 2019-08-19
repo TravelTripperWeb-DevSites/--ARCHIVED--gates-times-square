@@ -67,6 +67,110 @@
   }
 }
 
+//Other Rooms Carousel Starts Here
+.offers-slider {
+  margin: 0;
+  padding: 50px 0;
+  background-color: $border-clr;
+  .h3 {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  &__container {
+    @include make-container;
+    position: relative;
+    max-width: 1220px;
+    padding-bottom: 30px;
+    @include media-breakpoint-up(lg) {
+      padding-right: 25px;
+      padding-left: 25px;
+    }
+    .offers-carousel {
+      height: inherit;
+    }
+    .tns-nav {
+      bottom: -50px;
+      button {
+        width: 10px;
+        height: 10px;
+        margin: 0 6px;
+        padding: 0;
+        background-color: $white;
+        border: 0;
+        @include transition(.3s);
+        &:hover {
+          background-color: $white;
+        }
+      }
+    }
+  }
+  &__offer-item {
+    height: 100%;
+    &__inner {
+      height: 100%;
+      background-color: $white;
+    }
+    &__image-section {
+      position: relative;
+      height: 180px;
+      @include media-breakpoint-up(sm) {
+        height: 260px;
+      }
+      .objectfit {
+        height: 100%;
+      }
+    }
+    &__content-section {
+      min-height: auto;
+      padding: 24px;
+
+      @include media-breakpoint-up(sm) {
+        min-height: 200px;
+      }
+
+      .h5 {
+        margin-bottom: 20px;
+        line-height: normal;
+      }
+      .overline {
+        position: relative;
+        padding-bottom: 30px;
+        &::after {
+          position: absolute;
+          right: 0;
+          bottom: 13px;
+          left: 0;
+          width: 50px;
+          height: 1px;
+          margin: 0 auto;
+          content: '';
+          background-color: $gray-200;
+        }
+      }
+    }
+  }
+  .home-slider-control {
+    .prev-slide {
+      left: 0;
+      @media screen and (min-width: 1280px) {
+        left: -20px;
+      }
+    }
+    .next-slide {
+      right: 0;
+      @media screen and (min-width: 1280px) {
+        right: -20px;
+      }
+    }
+  }
+  &__view-all {
+    text-align: center;
+  }
+  .tns-inner {
+    height: auto !important;
+  }
+}
+
 .inner-hero {
   height: 320px;
 }
