@@ -1,0 +1,9 @@
+
+{% assign sync = include.sync_content %}
+{% assign room_detail = page.data %}
+
+<section class="hero inner-hero mb-5" style="background-image: url('//res.cloudinary.com/traveltripperweb/image/upload/c_limit,h_2500,w_2500/v1565949200/rtxgbdena3iwksm1guwp.jpg');">
+  <div class="hero__title">
+    <h1 class="h1">Comfort</h1>
+  </div>
+</section>
