@@ -1,0 +1,27 @@
+{% assign sync = include.sync_content %}
+
+<div class="c-room" ttweb-component="Room" data-tt-selected-room="{{room.reztrip_room_id}}">
+  <div class="c-room__image-group">
+    <div class="c-room__featured-image" {% if sync %}ttweb-room-component="RoomPrimaryImage"{% endif %}>
+      {% assign featured_image = room.images[0] | default: room.images[0] %}
+      {% include components/image image=featured_image max_width=600 %}
+    </div>
+  </div>
+  <div class="c-room__text-group">
+    <h3 class="c-room__name h4" tabindex="0">
+      <a href="{{ room.id | permalink: model_dir: 'rooms' }}" {% if sync %}ttweb-room-component="RoomName"{% endif %}>{{ room.name }}</a>
+    </h3>
+    <div class="c-room__tonightrate" tabindex="0">
+      <div class="c-room__availability" ttweb-room-component="ScarcityMessage"></div>
+      <div class="c-room__rate" ttweb-room-component="CrossOutRateContainer" data-tt-show-error="true"></div>
+    </div>
+    <div tabindex="0">
+      <p class="c-room__short-description" {% if sync %}ttweb-room-component="RoomShortDescription"{% endif %}>
+        {{ room.short_description }}
+      </p>
+    </div>
+    <div class="c-room__select">
+      <a class="btn btn--primary" href="{{ room.id | permalink: model_dir: 'rooms' | downcase }}">View this Room</a>
+    </div>
+  </div>
+</div>

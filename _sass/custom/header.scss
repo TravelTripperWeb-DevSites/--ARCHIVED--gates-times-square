@@ -6,6 +6,7 @@
   @include transition(.3s);
 
   .container {
+    position: relative;
     max-width: 1240px;
   }
 
