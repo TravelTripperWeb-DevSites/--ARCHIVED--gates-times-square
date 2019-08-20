@@ -7,3 +7,88 @@
     <h1 class="h1">Comfort</h1>
   </div>
 </section>
+
+<section class="rooms-carousel">
+  <div class="rooms-carousel__inner">
+    {% for room_image in room_detail.images %}
+    <div class="rooms-carousel__item" ttweb-component="Room" data-tt-selected-room="{{room.reztrip_room_id}}">
+      <div class="rooms-carousel__image objectfit" {% if sync %} ttweb-room-component="RoomImageList" {% endif %}>
+        {% include components/image image=room_image max_width=1900 %}
+      </div>
+      <div class="rooms-carousel__content">
+        <p class="h3" {% if sync %} ttweb-room-component="RoomName" {% endif %}>{{room_detail.name}}</p>
+        <div class="rooms-carousel__tonight-rate">
+          <div class="c-room__rate" ttweb-room-component="CrossOutRateContainer" data-tt-show-error="true"></div>
+        </div>
+        <div data-tt-class-name="btn btn--primary" ttweb-room-component="BookingButton">
+          Book Now
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+  <div class="home-slider-control">
+    <a href="javascript:void(0);" id="roomsCarouselPrev" class="prev-slide" title="Previous Slide" tabindex="-1">
+      <span class="prev">
+        <i class="fal fa-chevron-left"></i>
+      </span>
+    </a>
+    <a href="javascript:void(0);" id="roomsCarouselNext" class="next-slide" title="Next Slide" tabindex="-1">
+      <span class="next">
+        <i class="fal fa-chevron-right"></i>
+      </span>
+    </a>
+  </div>
+</section>
+
+<section class="room-info" ttweb-component="Room" data-tt-selected-room="{{room.reztrip_room_id}}">
+  <div class="room-info__row">
+    <div class="room-info__content">
+      <p class="overline overline--small mb-1">{{ room_detail.name }}</p>
+      <p class="h3">Room Information</p>
+      <p class="overline overline--small">
+        <span class="room-info__guest-size-max" {% if sync %}ttweb-room-component="RoomGuestSizeMax"{% endif %}>
+          {% if room_detail.guest_size_max and room_detail.guest_size_max > 0 %}
+            {% t 'rooms.guest_size_max', size:room_detail.guest_size_max %}
+          {% endif %}
+        </span> | <span class="room-info__size" {% if sync %}ttweb-room-component="RoomSize"{% endif %}>
+          {{ room_detail.size }}
+        </span>
+      </p>
+      <div class="room-info__description" {% if sync %}ttweb-room-component="RoomDescription"{% endif %}>
+        <p>{{ room_detail.description }}</p>
+      </div>
+    </div>
+    <div class="room-info__gallery">
+      <div class="room-info__gallery__wrap">
+        <img src="//res.cloudinary.com/traveltripperweb/image/upload/c_limit,h_2500,w_2500/v1566284866/fkgeezlfwc7mvkkwld6y.jpg" alt="Take a visual gallery">
+        <div class="floating">
+          <p class="h3 light">Take a visual gallery</p>
+          <a href="/galley/" class="btn btn--secondary btn--secondary--light">View Gallery</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="room-info__amenities">
+    <div class="room-info__amenities__image">
+      <div class="room-info__amenities__image__wrap">
+        <img src="//res.cloudinary.com/traveltripperweb/image/upload/c_limit,h_2500,w_2500/v1566285818/y9pmqvsrse5lph2sy2bi.jpg" alt="Gates Hotel Times Square Amenities">
+      </div>
+    </div>
+    <div class="room-info__amenities__content">
+      <div class="room-info__amenities__content__row">
+        <div class="amenities-right">
+          <p class="overline overline--small">Enjoy the following</p>
+          <p class="h2">Room<br>Amenities</p>
+        </div>
+        <div class="amenities-left" {% if sync %}ttweb-room-component="RoomAmenities"{% endif %}>
+          <ul>
+            {% for amenity in room_detail.amenities %}
+              <li>{{ amenity.name }}</li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
