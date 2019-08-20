@@ -1,26 +1,43 @@
 {% assign sync = include.sync_content %}
+{% assign offers = site.data._models.offers | sort: "order" %}
+{% assign sync = true %}
 
-<div class="c-offer" data-tt-rate-code="{{offer.reztrip_offer_id}}" ttweb-component="Offer">
-  <div class="c-offer__image" {% if sync %}ttweb-offer-component="OfferImage"{% endif %}>
-    {% include components/image image=offer.image max_width=600 %}
-  </div>
-  <div class="c-offer__content">
-    <div class="c-offer__name">
-      <a href="{{ offer.id | permalink: model_dir: 'offers' }}" {% if sync %}ttweb-offer-component="OfferTitle"{% endif %}>{{ offer.name }}</a>
+<div class="offers-nav mb-5">
+  <ul>
+    {% for offer in offers %}
+    <li>
+      <a href="{{ offer.id | permalink: model_dir: 'offers' }}" data-item="{{forloop.index0}}" class="{% if forloop.index == 1 %} active {% endif %}" {% if sync %}ttweb-offer-component="OfferTitle"{% endif %}>{{offer.name}}</a>
+    </li>
+    {% endfor %}
+  </ul>
+</div>
+
+<div class="c-offer-details mb-5" data-tt-rate-code="{{offer.reztrip_offer_id}}" ttweb-component="Offer">
+  <div class="c-offer-details__content text-center">
+    <p class="overline">SPECIAL OFFER</p>
+    <div class="c-offer-details__name h2 text-uppercase">
+      <a {% if sync %}ttweb-offer-component="OfferTitle"{% endif %}>{{ offer.name }}</a>
     </div>
-    <div class="c-offer__rate" ttweb-offer-component="CrossOutRateError">{% t 'offers.not_available' %}</div>
-    <div class="c-offer__rate" ttweb-offer-component="CrossOutRate" data-tt-pre-html="<span class='c-offer__rate-pre-label'>{% t 'offers.rate_pre_label' %}</span>" data-tt-post-html="<span class='c-offer__rate-post-label'>{% t 'offers.rate_post_label' %}</span>"></div>
-    <div class="c-offer__description" {% if sync %}ttweb-offer-component="OfferDescription"{% endif %}>
-      {{ offer.description }}
+    <div class="c-offer-details__rate-holder">
+      <div class="c-offer-details__rate" ttweb-offer-component="CrossOutRateError">{% t 'offers.not_available' %}</div>
+      <div class="c-offer-details__rate" ttweb-offer-component="CrossOutRate" data-tt-pre-html="<span class='c-offer-details__rate-pre-label'>{% t 'offers.rate_pre_label' %}</span>" data-tt-post-html="<span class='c-offer-details__rate-post-label'>{% t 'offers.rate_post_label' %}</span>"></div>
     </div>
-    <div class="c-offer__short-description"  {% if sync %}ttweb-offer-component="OfferShortDescription"{% endif %}>
-      {{ offer.short_description }}
-    </div>
-    <div class="c-offer__select">
+    <div class="c-offer-details__select">
       <!-- <div data-tt-class-name="btn" ttweb-offer-component="OfferBookingButton">
         {% t 'offers.buttons.book' %}
       </div> -->
-      <a class="btn btn--primary my-3" href="#" ttweb-offer-component="OfferBookingButton">{% t 'offers.buttons.book' %}</a>
+      <a class="btn btn--primary" href="#" ttweb-offer-component="OfferBookingButton">{% t 'offers.buttons.book' %}</a>
+    </div>
+    <div class="c-offer-details__description" {% if sync %}ttweb-offer-component="OfferDescription"{% endif %}>
+      {{ offer.description }}
+    </div>
+    <div class="c-offer-details__short-description"  {% if sync %}ttweb-offer-component="OfferShortDescription"{% endif %}>
+      {{ offer.short_description }}
     </div>
   </div>
+  <div class="c-offer-details__image" {% if sync %}ttweb-offer-component="OfferImage"{% endif %}>
+    {% include components/image image=offer.image max_width=1200 %}
+  </div>
 </div>
+
+{% include offers-carousel.html %}
