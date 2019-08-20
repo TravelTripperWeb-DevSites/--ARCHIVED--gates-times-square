@@ -1,0 +1,40 @@
+{% assign offers = site.data._models.offers | sort:"order" %}
+{% assign sync = true %}
+
+{% if offers.size >= 3 %}
+  <section class="offers-slider">
+    <div class="offers-slider__container">
+      <p class="h3">Offers</p>
+      <div class="offers-carousel align-items-stretch" role="listbox">
+        {% for offer in offers %}
+          <div class="offers-slider__offer-item text-center" data-tt-rate-code="{{offer.reztrip_offer_id}}" ttweb-component="Offer" role="option">
+            <div class="offers-slider__offer-item__inner">
+              <div class="offers-slider__offer-item__image-section">
+                <div class="objectfit" {% if sync %}ttweb-offer-component="OfferImage"{% endif %}>
+                  {% include components/image image=offer.image max_width=600 %}
+                </div>
+              </div>
+              <div class="offers-slider__offer-item__content-section d-flex align-items-center flex-column">
+                <p class="h5" {% if sync %}ttweb-offer-component="OfferTitle"{% endif %} tabindex="0">{{ offer.name }}</p>
+                <p {% if sync %}ttweb-offer-component="OfferShortDescription"{% endif %} tabindex="0">{{ offer.short_description | truncate: 70 }}</p>
+                <a class="btn btn--primary" tabindex="-1" href="/offers/{{ offer.id | downcase }}/"><span>View Offer</span></a>
+              </div>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+      <div class="home-slider-control">
+        <a href="javascript:void(0);" id="offersSliderPrev" class="prev-slide" title="Previous Slide" tabindex="-1">
+          <span class="prev">
+            <i class="fal fa-chevron-left"></i>
+          </span>
+        </a>
+        <a href="javascript:void(0);" id="offersSliderNext" class="next-slide" title="Next Slide" tabindex="-1">
+          <span class="next">
+            <i class="fal fa-chevron-right"></i>
+          </span>
+        </a>
+      </div>
+    </div>
+  </section>
+{% endif %}
