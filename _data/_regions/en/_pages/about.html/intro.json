@@ -34,7 +34,8 @@
     },
     "col2_html": {
       "custom_classes": [
-        "inner: w-100 d-flex flex-column h-100 justify-content-center"
+        "inner: w-100 d-flex flex-column h-100 justify-content-center",
+        "inner: p-4"
       ],
       "content": "<p class=\"h3 mb-2\">It&rsquo;s the Theater District, so we put on a show and raised the curtain on a performance that grabs guests from Act I.</p>\n<p>Night Times Square begins, like the best New York City tales do, with a big opening number. The lobby&rsquo;s epic tropical fish tank, octopi-inspired chandeliers and pops of blue, pink and orange light playing over funky works of art are an immediate delight, even to travelers who think they&rsquo;ve seen it all.&nbsp;</p>\n<p>Our location leaves plenty of room for character growth and development: At the edge of Times Square, steps from the uber pedestrian-friendly stretch of Broadway between 42<sup>nd</sup> and 47<sup>th</sup>, the less touristy, authentic, not-yet-Yelped-to-death restaurants of Hell&rsquo;s Kitchen and just about every major subway line in the city.</p>\n<p>But underneath all these special effects is a warm story with heart: Yours. We dress the stage for an &ldquo;anything is possible&rdquo; NYC experience at the hotel and beyond. What happens next is entirely up to you (with our Concierge playing a supporting role, of course).</p>\n<p>Just remember: the most compelling stories happen at Night.&nbsp;</p>"
     }
