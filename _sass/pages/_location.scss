@@ -1,2 +1,10 @@
 // Location Page Elements
 // ==========================================================================
+
+.location-wrap {
+  .col--left {
+    @include media-breakpoint-up(md) {
+      padding-right: 100px;
+    }
+  }
+}
