@@ -10,5 +10,48 @@ permalink_localized:
 meta_tags:
   robots:
 ---
+<div class="mb-5">
+  {% include offers-carousel.html %}
+</div>
 
-{% include offers-carousel.html %}
+<section class="rooms-carousel mb-5">
+  <div class="rooms-carousel__inner">
+    {% assign rooms = site.data._models.rooms | sort: "order" | reverse %}
+    {% assign sync = true %}
+    {% for room in rooms limit:4 %}
+      {% assign featured_image = room.featured_image | default: room.images[0] %}
+      <div class="rooms-carousel__item" ttweb-component="Room" data-tt-selected-room="{{room.reztrip_room_id}}">
+        <div class="rooms-carousel__image objectfit" {% if sync %} ttweb-room-component="RoomPrimaryImage" {% endif %}>
+          {% include components/image image=featured_image max_width=1900 %}
+        </div>
+        <div class="rooms-carousel__content">
+          <p class="h3" {% if sync %} ttweb-room-component="RoomName" {% endif %}>{{room.name}}</p>
+          <p class="rooms-carousel__content__description">{{room.short_description}}</p>
+          <a class="btn btn--primary" href="/rooms/">View All Rooms</a>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+  <div class="rooms-carousel__room-titles">
+    <ul>
+      {% for room in rooms limit:4 %}
+        <li data-item="{{forloop.index0}}" class="rooms-carousel__room-titles__item {% if forloop.index == 1 %} active {% endif %}" onclick="changeRoomSlide({{forloop.index}})">
+          {{room.name}}
+        </li>
+      {% endfor %}
+    </ul>
+    <a href="/rooms/">[ More +]</a>
+  </div>
+  <div class="home-slider-control">
+    <a href="javascript:void(0);" id="roomsCarouselPrev" class="prev-slide" title="Previous Slide" tabindex="-1">
+      <span class="prev">
+        <i class="fal fa-chevron-left"></i>
+      </span>
+    </a>
+    <a href="javascript:void(0);" id="roomsCarouselNext" class="next-slide" title="Next Slide" tabindex="-1">
+      <span class="next">
+        <i class="fal fa-chevron-right"></i>
+      </span>
+    </a>
+  </div>
+</section>
