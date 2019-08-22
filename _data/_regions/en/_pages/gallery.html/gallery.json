@@ -1,0 +1,21 @@
+[
+  {
+    "advanced_options": {
+    },
+    "galleries": [
+      {
+        "label": "Social",
+        "gallery": "social"
+      },
+      {
+        "label": "Rooms",
+        "gallery": "rooms"
+      },
+      {
+        "label": "Hotel",
+        "gallery": "hotel"
+      }
+    ],
+    "_template": "galleries"
+  }
+]
