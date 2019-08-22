@@ -286,7 +286,9 @@
 }
 
 .home-page-intro {
-  margin: 30px 0;
+  @include make-container;
+  max-width: 1320px;
+  margin: 30px auto;
   &__wrap {
     @include make-row;
     margin: 0;
@@ -296,6 +298,8 @@
     @include media-breakpoint-up(md) {
       @include make-col(6);
     }
+    position: relative;
+    padding: 0 20px;
     &__content {
       max-width: 480px;
       margin: 30px auto;
@@ -310,11 +314,128 @@
         color: $secondary;
       }
     }
+    &__weather-widget {
+      position: absolute;
+      bottom: 0;
+      .objectfit {
+        height: 530px;
+        line-height: 0;
+      }
+    }
   }
   &__right {
     @include make-col-ready;
     @include media-breakpoint-up(md) {
       @include make-col(6);
+    }
+    padding: 0 20px;
+    &__gallery {
+      position: relative;
+      &__text {
+        position: absolute;
+        right: 50px;
+        bottom: 50px;
+        p {
+          margin-bottom: 30px;
+        }
+      }
+    }
+    &__amenity {
+      text-align: center;
+      background-color: $gray-400;
+      &__row {
+        @include make-row;
+        margin: 0;
+      }
+      &__image {
+        @include make-col-ready;
+        @include media-breakpoint-up(md) {
+          @include make-col(6.5);
+        }
+        padding: 0;
+        .objectfit {
+          line-height: 0;
+        }
+      }
+      &__content {
+        @include make-col-ready;
+        @include media-breakpoint-up(md) {
+          @include make-col(5.5);
+        }
+        padding: 0 12px;
+        p {
+          margin-bottom: 30px;
+          font-size: $display8-size;
+          color: $white;
+        }
+        .h3 {
+          font-size: $display4-size;
+        }
+        .small {
+          margin-bottom: 0;
+          font-size: $display9-size;
+        }
+      }
+    }
+  }
+}
+
+.three-col {
+  @include make-container;
+  max-width: 1320px;
+  margin-bottom: 30px;
+  &__row {
+    @include make-row;
+    margin: 0;
+  }
+  &__image {
+    @include make-col-ready;
+    @include media-breakpoint-up(md) {
+      @include make-col(4.25);
+    }
+  }
+  &__newsletter {
+    @include make-col-ready;
+    @include media-breakpoint-up(md) {
+      @include make-col(3.5);
+    }
+    .h2 {
+      padding: 26px 0 20px;
+    }
+    .overline {
+      margin-bottom: 5px;
+      padding: 0 40px 10px;
+      font-size: $display8-size;
+      letter-spacing: .1em;
+    }
+    .email {
+      display: block;
+      width: 100%;
+      padding: 16px 0 16px 24px;
+      font-size: $display8-size;
+      font-weight: 700;
+      color: $white;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      background-color: $input-bg;
+      border: 0;
+      @include placeholder-text($family-primary, $display8-size, $white);
+    }
+    label {
+      display: block;
+      margin: 10px 0;
+      font-size: $display8-size;
+      color: $black;
+      text-transform: none;
+      a {
+        text-decoration: underline;
+      }
+    }
+  }
+  &__content {
+    @include make-col-ready;
+    @include media-breakpoint-up(md) {
+      @include make-col(4.25);
     }
   }
 }
