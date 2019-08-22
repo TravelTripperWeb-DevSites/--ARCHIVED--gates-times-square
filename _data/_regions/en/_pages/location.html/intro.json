@@ -1,0 +1,15 @@
+[
+  {
+    "_template": "2_col",
+    "advanced_options": {
+      "custom_classes": "location-wrap mb-5"
+    },
+    "layout": "8_4",
+    "col1_html": {
+      "content": "<p class=\"h4 mb-2\">KEY WEST ACCESSIBILITY</p>\n<p>Located at the entry point of the island on North Roosevelt Boulevard, <a title=\"Gates Hotel\" href=\"https://www.gateshotelkeywest.com/\">The Gates Hotel</a> is a gateway to all things Key West, providing you with the full island experience at your fingertips. The island of Key West can be accessed by plane, boat and car.</p>\n<p>Arrive to Key West International Airport for the most convenience, or select the Miami International Airport or Ft. Lauderdale International Airport and take the picturesque drive south by way of the Overseas Highway (US1), crossing the entire chain of the Florida Keys (average drive between 3.5 to 4 hours). Alternatively you may arrive by Ferry from Ft. Myers with Key West Express.</p>\n<p>A complimentary shuttle service to Old Town is provided daily to our guests. Please note that unfortunately we are unable to accommodate parking for trailers or boats on property. Should you need to secure parking for either, please contact the hotel for a list of local facilities that can accommodate parking for you.</p>\n<p class=\"h4 mb-2\">OVERVIEW</p>\n<p>Mixing contemporary design and retro Floridian flair, The Gates Hotel features <a title=\"Key West hotel rooms\" href=\"https://www.gateshotelkeywest.com/rooms/\">guestrooms with modern amenities</a> that uniquely combine upscale sophistication and polished service with the island&rsquo;s casual laidback vibe.</p>\n<p>Rum Row, the hotel&rsquo;s lively pool, bar, and lounge scene, welcomes guests to kick back in true Key West style with live music, handcrafted cocktails, and regionally inspired tapas.</p>\n<p>Patrons can channel the days of Prohibition with specialty spirits and the custom Gates Key West Hotel Rum from our exclusive partnership with First Legal Rum Distillery, or experience a taste of Cuban-Key West history at our very own cigar lounge featuring events and products from Rodriguez Cigars.</p>\n<p class=\"h4 mb-2\">OLD TOWN SHUTTLE SERVICE</p>\n<p>Complimentary shuttle service is provided daily to transport our guests to and from Old Town at regular increments. Please review the <a title=\"shuttle schedule\" href=\"shuttle/\">shuttle schedule </a> to plan your trip.</p>"
+    },
+    "col2_html": {
+      "content": "<p class=\"h5 mb-2\">Address</p>\n<p>The Gates Hotel | Key West<br /> 3824 North Roosevelt Blvd<br /> Key West, Florida 33040<br /> Tel: (305) 320-0930<br /> Email: <a title=\"reservations@gateshotelkeywest.com\" href=\"mailto:reservations@gateshotelkeywest.com\">reservations@gateshotelkeywest.com</a></p>\n<p class=\"h5 mb-2\">Check - In</p>\n<p>16:00 hours / 4:00 pm</p>\n<p class=\"h5 mb-2\">Check - Out</p>\n<p>11:00 hours / 11:00 am</p>\n<p class=\"h5 mb-2\">GPS</p>\n<p>24&deg; 34' 16.8\" N81&deg; 45' 18.6\" W</p>"
+    }
+  }
+]
