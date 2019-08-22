@@ -125,6 +125,8 @@
 
   &__content {
     @include make-col-ready;
+    padding-top: 30px;
+    padding-bottom: 10px;
     text-align: center;
     @include media-breakpoint-up(md) {
       @include make-col(6);
@@ -143,7 +145,7 @@
       margin-bottom: 20px;
 
       @include media-breakpoint-up(md) {
-        height: 650px;
+        min-height: 650px;
         margin-bottom: 0;
       }
 
@@ -256,8 +258,9 @@
       &__wrap {
         position: relative;
         height: 250px;
+        
         @include media-breakpoint-up(md) {
-          height: 475px;
+          min-height: 475px;
           margin-top: -20px;
         }
 
