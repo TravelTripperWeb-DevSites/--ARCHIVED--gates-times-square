@@ -4,6 +4,9 @@
     "advanced_options": {
       "custom_classes": "contact-wrap"
     },
-    "layout": "8_4"
+    "layout": "8_4",
+    "col1_html": {
+      "content": "<p class=\"h4 mb-2\">LEARN MORE ABOUT OUR BOUTIQUE HOTEL IN KEY WEST</p>\n<p>Contact <a title=\"Boutique Key West hotel\" href=\"https://www.gateshotelkeywest.com/\">The Gates Hotel Key West</a></p>\n<p>The Gates Hotel Key West is a new lifestyle hotel in Key West that offers 100 <a title=\"Key West accommodations\" href=\"https://www.gateshotelkeywest.com/rooms/\">contemporary accommodations</a> with an urban chic flare. Featuring one of the <a title=\"hotels in Key West\" href=\"https://www.gateshotelkeywest.com/location/\">best locations</a> for hotels in Key West, our family-friendly Key West hotel is located at the entrance of the island. For more information or directions, contact our front desk and take a peek at our map below.</p>\n<p>You can find detailed information about accessibility in our <a href=\"../accessibility\">Accessibility Statement.</a></p>"
+    }
   }
 ]
