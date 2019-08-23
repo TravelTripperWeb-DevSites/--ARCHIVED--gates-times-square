@@ -68,7 +68,7 @@
 }
 
 //Other Rooms Carousel Starts Here
-.offers-slider {
+.other-items-slider {
   margin: 0;
   padding: 50px 0;
   background-color: $border-clr;
@@ -85,7 +85,7 @@
       padding-right: 25px;
       padding-left: 25px;
     }
-    .offers-carousel {
+    .items-carousel {
       height: inherit;
     }
     .tns-nav {
@@ -104,7 +104,7 @@
       }
     }
   }
-  &__offer-item {
+  &__item {
     height: 100%;
     &__inner {
       height: 100%;
@@ -127,10 +127,19 @@
       @include media-breakpoint-up(sm) {
         min-height: 200px;
       }
-
+      p {
+        width: 90%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
       .h5 {
+        width: 90%;
         margin-bottom: 20px;
+        overflow: hidden;
         line-height: normal;
+        text-overflow: ellipsis;
+        white-space: nowrap;
       }
       .overline {
         position: relative;

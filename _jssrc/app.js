@@ -97,18 +97,18 @@ readyDoc(function() {
     });
   }
 
-  if (document.getElementsByClassName("offers-carousel")[0]) {
+  if (document.getElementsByClassName("items-carousel")[0]) {
     setTimeout(function() {
       var otherRoomsSlider = tns({
-        container: '.offers-carousel',
+        container: '.items-carousel',
         "items": 1,
         "mouseDrag": true,
         "swipeAngle": false,
         "speed": 400,
         "autoHeight": true,
         "nav": false,
-        "prevButton": "#offersSliderPrev",
-        "nextButton": "#offersSliderNext",
+        "prevButton": "#itemsSliderPrev",
+        "nextButton": "#itemsSliderNext",
         "gutter": 25,
         "responsive": {
           "768": {

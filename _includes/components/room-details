@@ -92,3 +92,44 @@
     </div>
   </div>
 </section>
+
+{% assign rooms = site.data._models.rooms | sort:"order" %}
+{% assign sync = true %}
+
+{% if rooms.size >= 3 %}
+  <section class="other-items-slider">
+    <div class="other-items-slider__container">
+      <p class="h3">More Rooms</p>
+      <div class="items-carousel align-items-stretch" role="listbox">
+        {% for room in rooms %}
+          <div class="other-items-slider__item text-center" ttweb-component="Room" data-tt-selected-room="{{room.reztrip_room_id}}" role="option">
+            <div class="other-items-slider__item__inner">
+              <div class="other-items-slider__item__image-section">
+                <div class="objectfit" {% if sync %} ttweb-room-component="RoomPrimaryImage" {% endif %}>
+                  {% include components/image image=featured_image max_width=1900 %}
+                </div>
+              </div>
+              <div class="other-items-slider__item__content-section d-flex align-items-center flex-column">
+                <p class="h5" {% if sync %} ttweb-room-component="RoomName" {% endif %} tabindex="0">{{ room.name }}</p>
+                <p {% if sync %}ttweb-room-component="RoomShortDescription"{% endif %} tabindex="0">{{room.short_description}}</p>
+                <a class="btn btn--primary" tabindex="-1" href="{{ room.id | permalink: model_dir: 'rooms' | downcase }}"><span>View Room</span></a>
+              </div>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+      <div class="home-slider-control">
+        <a href="javascript:void(0);" id="itemsSliderPrev" class="prev-slide" title="Previous Slide" tabindex="-1">
+          <span class="prev">
+            <i class="fal fa-chevron-left"></i>
+          </span>
+        </a>
+        <a href="javascript:void(0);" id="itemsSliderNext" class="next-slide" title="Next Slide" tabindex="-1">
+          <span class="next">
+            <i class="fal fa-chevron-right"></i>
+          </span>
+        </a>
+      </div>
+    </div>
+  </section>
+{% endif %}
