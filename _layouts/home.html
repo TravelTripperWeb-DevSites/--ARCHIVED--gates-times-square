@@ -5,31 +5,40 @@ layout: default
   <div class="home-hero-slider__inner">
     {% assign homeSlides = site.data._models.home-slider | sort: "order" | reverse %}
     {% for homeSlide in homeSlides %}
-      <div class="home-hero-slider__item">
-        <div class="home-hero-slider__image objectfit">
-          <img src="{{homeSlide.image.url_xlarge}}" alt="{{homeSlide.image.alt}}">
-        </div>
-        <div class="home-hero-slider__logo objectfit">
-          <img src="//res.cloudinary.com/traveltripperweb/image/upload/c_limit,h_2500,w_2500/v1565608401/bh704eqrcwffd8x2okse.png" alt="Gates Logo">
-        </div>
-        <div class="home-hero-slider__social-links">
-          <p class="overline overline--small light">Follow Us</p>
-          <ul>
-            <li><a href="https://www.facebook.com/NightHotelTSQ">
+    <div class="home-hero-slider__item">
+      <div class="home-hero-slider__image objectfit">
+        <img src="{{homeSlide.image.url_xlarge}}" alt="{{homeSlide.image.alt}}">
+      </div>
+      <div class="home-hero-slider__logo objectfit">
+        <img src="//res.cloudinary.com/traveltripperweb/image/upload/c_limit,h_2500,w_2500/v1565608401/bh704eqrcwffd8x2okse.png" alt="Gates Logo">
+      </div>
+      <div class="home-hero-slider__social-links">
+        <p class="overline overline--small light">Follow Us</p>
+        <ul>
+          {% assign social = site.data.social %}
+          {% if social.facebook.username %}
+            <li><a href="https://www.facebook.com/{{social.facebook.username}}">
               <i class="fab fa-facebook-f"></i>
             </a></li>
-            <li><a href="https://twitter.com/NightHotelTSQ">
+          {% endif %}
+          {% if social.twitter.username %}
+            <li><a href="https://twitter.com/{{social.twitter.username}}">
               <i class="fab fa-twitter"></i>
             </a></li>
-            <li><a href="https://instagram.com/night_hotels">
+          {% endif %}
+          {% if social.instagram.username %}
+            <li><a href="https://instagram.com/{{social.instagram.username}}">
               <i class="fab fa-instagram"></i>
             </a></li>
-            <li><a href="https://plus.google.com/104877954400890497245/posts">
+          {% endif %}
+          {% if social.googleplus.username %}
+            <li><a href="https://plus.google.com/{{social.googleplus.username}}/posts">
               <i class="fab fa-google-plus-g"></i>
             </a></li>
-          </ul>
-        </div>
+          {% endif %}
+        </ul>
       </div>
+    </div>
     {% endfor %}
   </div>
   <div class="home-slider-control">
@@ -50,12 +59,21 @@ layout: default
   <div class="home-page-intro__wrap">
     <div class="home-page-intro__left">
       <div class="home-page-intro__left__content">
-        <p class="h3">WELCOME TO PARADISE</p>
-        <p>Welcome to a sun-soaked paradise. Stay with us at The Gates, and discover the history and soul of Key West. Our local touches immerse you in the art of island living, through design, music and, of course, food and drink. Bring your furry friends along, because we're also pet friendly! But be warned, you might never want to leave.</p> <p>The Gates Hotel Key West welcomes guests of all abilities. Our property descriptions aim to allow any visitor to make an informed decision on whether the hotel is an appropriate choice for their needs. For more information, please see our Accessibility Statement.</p>
+        {% regionblock intro_header, type: header  %}
+          <p class="h3">WELCOME TO PARADISE</p>
+        {% endregionblock %}
+        {% regionblock intro_text, type: text  %}
+          <p>Welcome to a sun-soaked paradise. Stay with us at The Gates, and discover the history and soul of Key West. Our local touches immerse you in the art of island living, through design, music and, of course, food and drink. Bring your furry
+            friends along, because we're also pet friendly! But be warned, you might never want to leave.</p>
+          <p>The Gates Hotel Key West welcomes guests of all abilities. Our property descriptions aim to allow any visitor to make an informed decision on whether the hotel is an appropriate choice for their needs. For more information, please see our
+            Accessibility Statement.</p>
+        {% endregionblock %}
       </div>
       <div class="home-page-intro__left__weather-widget">
         <div class="home-page-intro__left__weather-widget__bg objectfit">
-          <img src="//res.cloudinary.com/traveltripperweb/image/upload/c_limit,h_2500,w_2500/v1566135055/vbanbj2or4pxrcjoawmi.jpg" alt="Weather Widget background">
+          {% regionblock intro_img1, type: image  %}
+            <img src="//res.cloudinary.com/traveltripperweb/image/upload/c_limit,h_2500,w_2500/v1566135055/vbanbj2or4pxrcjoawmi.jpg" alt="Weather Widget background">
+          {% endregionblock %}
         </div>
         <div class="weather-widget-box">
           <div class="weather" id="weather"></div>
@@ -65,26 +83,38 @@ layout: default
     <div class="home-page-intro__right">
       <div class="home-page-intro__right__gallery">
         <div class="home-page-intro__right__gallery__image objectfit">
-          <img src="//res.cloudinary.com/traveltripperweb/image/upload/c_limit,h_2500,w_2500/v1566293980/zsdpko4sjtkytsuyycze.jpg" alt="Gallery">
+          {% regionblock intro_img2, type: image  %}
+            <img src="//res.cloudinary.com/traveltripperweb/image/upload/c_limit,h_2500,w_2500/v1566293980/zsdpko4sjtkytsuyycze.jpg" alt="Gallery">
+          {% endregionblock %}
         </div>
         <div class="home-page-intro__right__gallery__text">
-          <p class="h3 light">Take a visual Journey</p>
-          <a class="btn btn--secondary btn--secondary--light" href="/gallery/">View Gallery</a>
+          {% regionblock intro_sub_header, type: header  %}
+            <p class="h3 light">Take a visual Journey</p>
+          {% endregionblock %}
+          {% regionblock intro_link, type: text  %}
+            <a class="btn btn--secondary btn--secondary--light" href="/gallery/">View Gallery</a>
+          {% endregionblock %}
         </div>
       </div>
       <div class="home-page-intro__right__amenity">
         <div class="home-page-intro__right__amenity__row align-items-center">
           <div class="home-page-intro__right__amenity__image">
             <div class="objectfit">
-              <img src="//res.cloudinary.com/traveltripperweb/image/upload/c_limit,h_2500,w_2500/v1566297219/jves9fkuo1stu8wonxjs.jpg" alt="Pet Friendly">
+              {% regionblock intro_img3, type: image  %}
+                <img src="//res.cloudinary.com/traveltripperweb/image/upload/c_limit,h_2500,w_2500/v1566297219/jves9fkuo1stu8wonxjs.jpg" alt="Pet Friendly">
+              {% endregionblock %}
             </div>
           </div>
           <div class="home-page-intro__right__amenity__content">
-            <p class="h3">PET FRIENDLY</p>
-            <p>Don't leave your best friend at home! Your furry friends are welcome at The Gates Hotel Key West.
+            {% regionblock intro_header_2, type: header  %}
+              <p class="h3">PET FRIENDLY</p>
+            {% endregionblock %}
+            {% regionblock intro_text_2, type: text  %}
+              <p>Don't leave your best friend at home! Your furry friends are welcome at The Gates Hotel Key West.
               They’ll even get a little box of goodies for their stay.</p>
-            <p class="small">Fees: $25 per pet per day<br>
+              <p class="small">Fees: $25 per pet per day<br>
               Weight Limit: 50 pounds or lighter</p>
+              {% endregionblock %}                
           </div>
         </div>
       </div>
@@ -97,25 +127,25 @@ layout: default
     {% assign rooms = site.data._models.rooms | sort: "order" | reverse %}
     {% assign sync = true %}
     {% for room in rooms limit:4 %}
-      {% assign featured_image = room.featured_image | default: room.images[0] %}
-      <div class="rooms-carousel__item" ttweb-component="Room" data-tt-selected-room="{{room.reztrip_room_id}}">
-        <div class="rooms-carousel__image objectfit" {% if sync %} ttweb-room-component="RoomPrimaryImage" {% endif %}>
-          {% include components/image image=featured_image max_width=1900 %}
-        </div>
-        <div class="rooms-carousel__content">
-          <p class="h3" {% if sync %} ttweb-room-component="RoomName" {% endif %}>{{room.name}}</p>
-          <p class="rooms-carousel__content__description">{{room.short_description}}</p>
-          <a class="btn btn--primary" href="/rooms/">View All Rooms</a>
-        </div>
+    {% assign featured_image = room.featured_image | default: room.images[0] %}
+    <div class="rooms-carousel__item" ttweb-component="Room" data-tt-selected-room="{{room.reztrip_room_id}}">
+      <div class="rooms-carousel__image objectfit" {% if sync %} ttweb-room-component="RoomPrimaryImage" {% endif %}>
+        {% include components/image image=featured_image max_width=1900 %}
       </div>
+      <div class="rooms-carousel__content">
+        <p class="h3" {% if sync %} ttweb-room-component="RoomName" {% endif %}>{{room.name}}</p>
+        <p class="rooms-carousel__content__description">{{room.short_description}}</p>
+        <a class="btn btn--primary" href="/rooms/">View All Rooms</a>
+      </div>
+    </div>
     {% endfor %}
   </div>
   <div class="rooms-carousel__room-titles">
     <ul>
       {% for room in rooms limit:4 %}
-        <li data-item="{{forloop.index0}}" class="rooms-carousel__room-titles__item {% if forloop.index == 1 %} active {% endif %}" onclick="changeRoomSlide({{forloop.index}})">
-          {{room.name}}
-        </li>
+      <li data-item="{{forloop.index0}}" class="rooms-carousel__room-titles__item {% if forloop.index == 1 %} active {% endif %}" onclick="changeRoomSlide({{forloop.index}})">
+        {{room.name}}
+      </li>
       {% endfor %}
     </ul>
     <a href="/rooms/">[ More +]</a>
@@ -157,7 +187,8 @@ layout: default
     </div>
     <div class="three-col__content">
       <p class="h3">Eat & Drink</p>
-      <p><a title="Food in Key West" href="/eat-drink/">Dining</a> at The Gates is relaxed and regionally inspired. From the convenience of our signature food truck The Blind Pig, to the energy of our outdoor bar, Rum Row, The Gates Hotel offers imaginative cuisine, festive cocktails ensuring an unrivaled dining experience on the island.</p>
+      <p><a title="Food in Key West" href="/eat-drink/">Dining</a> at The Gates is relaxed and regionally inspired. From the convenience of our signature food truck The Blind Pig, to the energy of our outdoor bar, Rum Row, The Gates Hotel offers
+        imaginative cuisine, festive cocktails ensuring an unrivaled dining experience on the island.</p>
     </div>
   </div>
 </section>
@@ -181,6 +212,68 @@ layout: default
             <p class="h4">Eat</p>
           </div>
         </div>
+        <div class="eat-drink__left__content__timings">
+          <p class="h2">The Blind Pig</p>
+          <ul>
+            <li>
+              <p class="h4"> Breakfast</p>
+            </li>
+            <li>
+              <p>Daily<br>
+                7:00 AM to 11:00 AM
+              </p>
+            </li>
+            <li></li>
+          </ul>
+          <ul>
+            <li>
+              <p class="h4">Lunch</p>
+            </li>
+            <li>
+              <p>Daily<br>
+                11:00 AM to 10:00pm
+              </p>
+            </li>
+            <li> </li>
+          </ul>
+          <ul>
+            <li>
+              <p class="h4">Dinner</p>
+            </li>
+            <li>
+              <p>Daily<br>
+                11:00 AM to 10:00pm
+              </p>
+            </li>
+            <li>
+              <a href="//res.cloudinary.com/traveltripperweb/raw/upload/v1566545848/d2xr0a6t1im75wqoavoq.pdf" class="next-slide" title="Next Slide" target="_blank">
+                <span class="next next--white">
+                  <i class="fal fa-chevron-right"></i>
+                </span>
+              </a>
+            </li>
+          </ul>
+          <ul>
+            <p class="h2">Rum Row</p>
+            <ul>
+              <li>
+                <p class="h4">Pool | Bar | Lounge</p>
+              </li>
+              <li>
+                <p>Daily<br>
+                  11:00 AM to 10:00pm
+                </p>
+              </li>
+              <li>
+                <a href="//res.cloudinary.com/traveltripperweb/raw/upload/v1566545964/rrvl5uslx536io74q8gp.pdf" class="next-slide" target="_blank">
+                  <span class="next next--white">
+                    <i class="fal fa-chevron-right"></i>
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </ul>
+        </div>
       </div>
     </div>
     <div class="eat-drink__right">
@@ -195,16 +288,16 @@ layout: default
   <div class="pages-slider__inner">
     {% assign pagesSlides = site.data._models.pages-carousel | sort: "order" | reverse %}
     {% for pagesSlide in pagesSlides %}
-      <div class="pages-slider__item">
-        <div class="pages-slider__image objectfit">
-          <img src="{{pagesSlide.image.url_xlarge}}" alt="{{pagesSlide.image.alt}}">
-        </div>
-        <div class="pages-slider__content">
-          <p class="h3">{{pagesSlide.title}}</p>
-          <p class="pages-slider__content__description">{{pagesSlide.description}}</p>
-          <a class="btn btn--primary" href="{{pagesSlide.button_link}}">{{pagesSlide.button_text}}</a>
-        </div>
+    <div class="pages-slider__item">
+      <div class="pages-slider__image objectfit">
+        <img src="{{pagesSlide.image.url_xlarge}}" alt="{{pagesSlide.image.alt}}">
       </div>
+      <div class="pages-slider__content">
+        <p class="h3">{{pagesSlide.title}}</p>
+        <p class="pages-slider__content__description">{{pagesSlide.description}}</p>
+        <a class="btn btn--primary" href="{{pagesSlide.button_link}}">{{pagesSlide.button_text}}</a>
+      </div>
+    </div>
     {% endfor %}
   </div>
   <div class="home-slider-control">

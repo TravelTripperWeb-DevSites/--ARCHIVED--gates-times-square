@@ -458,7 +458,7 @@
   &__left {
     @include make-col-ready;
     @include media-breakpoint-up(md) {
-      @include make-col(7);
+      @include make-col(8);
     }
     padding: 0 10px 0 0;
     .objectfit {
@@ -468,7 +468,7 @@
       @include vertical-center;
       right: 0;
       left: 0;
-      max-width: 670px;
+      max-width: 720px;
       margin: auto;
       &__icons {
         display: table-cell;
@@ -484,7 +484,45 @@
             color: $white;
           }
           img {
+            width: 70px;
             max-width: 100%;
+          }
+        }
+      }
+      &__timings {
+        display: table-cell;
+        padding: 30px;
+        vertical-align: top;
+        background-color: rgba($white ,.9);
+        .h2 {
+          margin-bottom: 30px;
+          font-size: $display3-size;
+          font-weight: 300;
+          color: $terciary;
+        }
+        ul {
+          margin: 0;
+          padding: 0;
+          li {
+            display: inline-block;
+            margin-bottom: 15px;
+            vertical-align: top;
+            p {
+              width: 225px;
+            }
+            .h4 {
+              width: 164px;
+              line-height: 28px;
+            }
+          }
+        }
+        a {
+          display: block;
+          background-color: $input-bg;
+          opacity: .8;
+          @include transition(all .3s);
+          &:hover {
+            opacity: 1;
           }
         }
       }
@@ -493,7 +531,7 @@
   &__right {
     @include make-col-ready;
     @include media-breakpoint-up(md) {
-      @include make-col(5);
+      @include make-col(4);
     }
     padding: 0 0 0 10px;
     .objectfit {
