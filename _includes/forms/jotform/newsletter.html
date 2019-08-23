@@ -1,0 +1,14 @@
+{% assign jotforms = site.data.forms.jotform %}
+{% assign news_letter_id = jotforms.newsletter-id %}
+
+
+<form action="https://submit.jotform.me/submit/{{ news_letter_id }}/" method="post" name="form_{{ news_letter_id }}" id="{{ news_letter_id }}"
+accept-charset="utf-8" autocomplete="off">
+  <input type="hidden" name="formID" value="{{news_letter_id}}" />
+  <input type="email" class="email" name="q3_email" placeholder="Email Address" required>
+  <label for="agreeTerms">
+    <input type="checkbox" name="q4_iAgree[]" value="Yes" aria-label="click spacebar to agree to out terms of service and privacy policy" id="agreeTerms" required>
+    I agree to the <a href="/terms/" target="_blank">Terms of Service</a> and <a href="/privacy/" target="_blank">Privacy Policy</a>
+  </label>
+  <button type="submit" name="button" class="btn btn--primary">Submit</button>
+</form>
