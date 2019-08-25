@@ -10,7 +10,7 @@ readyDoc(function () {
 
   var weatherKey = 'b03f57fc9998146fc56895a9b59d1661';
   var xhttp = new XMLHttpRequest();
-  xhttp.open("GET", 'https://cors.io/?https://api.darksky.net/forecast/' + weatherKey + '/25.792240,-80.134850?units=us', true);
+  xhttp.open("GET", 'https://api.darksky.net/forecast/' + weatherKey + '/25.792240,-80.134850?units=us', true);
   xhttp.onreadystatechange = function () {
     if (this.readyState == 4 && this.status == 200) {
       var weatherDetails = JSON.parse(this.responseText);
