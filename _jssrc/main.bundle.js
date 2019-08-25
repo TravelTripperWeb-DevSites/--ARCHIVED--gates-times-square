@@ -9,22 +9,17 @@ function readyDoc(fn) {
 readyDoc(function () {
 
   var weatherKey = 'b03f57fc9998146fc56895a9b59d1661';
-
-  axios({
-    method: 'get',
-    url: 'https://cors.io/?https://api.darksky.net/forecast/' + weatherKey + '/24.5710009,-81.7566775?units=us',
-    dataType: 'jsonp'
-  }).then(function (localWeather) {
-    var temF = localWeather.currently.temperature;
-    var temC = (temF - 32) * (5 / 9);
-    var html = '<p>Current Weather<br>Times Square, Florida</p><div class="visualtour__weather__icon"><i class="wi ' + localWeather.hourly.icon + '"></i></div><div class="visualtour__weather__temp">' + Math.round(temF) + '&deg;F ' + Math.round(temC) + '&#8451; <br> <a href="https://darksky.net/forecast/24.5711,-81.7531/us12/en" aria-hidden="true" rel="nofollow" target="_blank">Powered by Dark Sky</a></div>';
-    document.getElementById("weather").innerHTML = html;
-  }).catch(function (error) {
-    // handle error
-    console.log(error);
-  }).finally(function () {
-    // always executed
-  });
+  var xhttp = new XMLHttpRequest();
+  xhttp.open("GET", 'https://cors.io/?https://api.darksky.net/forecast/' + weatherKey + '/25.792240,-80.134850?units=us', true);
+  xhttp.onreadystatechange = function () {
+    if (this.readyState == 4 && this.status == 200) {
+      var weatherDetails = JSON.parse(this.responseText);
+      console.log(weatherDetails);
+      var html = '<div class="weather-wrap__weather__icon"><i class="wi ' + weatherDetails.hourly.icon + '"></i></div><div class="weather-wrap__weather__temp"><span>' + Math.round(weatherDetails.currently.temperature) + '&deg;F</span></div><div class="weather-wrap__weather__credits"><a href="https://darksky.net/poweredby/" aria-hidden="true" rel="nofollow" target="_blank">Powered by Dark Sky</a></div>';
+      document.getElementById("weather").innerHTML = html;
+    }
+  };
+  xhttp.send();
 
   // Home page hero carousel
   if (document.getElementsByClassName("home-hero-slider")[0]) {
