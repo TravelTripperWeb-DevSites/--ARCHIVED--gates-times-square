@@ -211,3 +211,28 @@
     }
   }
 }
+
+.sitemap-links {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: $primary;
+  ul {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    li {
+      list-style: none;
+      a {
+        padding: 5px;
+        color: $white;
+        text-transform: uppercase;
+        &:hover {
+          color: $white;
+          text-decoration: none;
+          opacity: .8;
+        }
+      }
+    }
+  }
+}
