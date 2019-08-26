@@ -170,18 +170,27 @@ layout: default
   <div class="three-col__row">
     <div class="three-col__image">
       <div class="objectfit">
-        <img src="//res.cloudinary.com/traveltripperweb/image/upload/c_limit,h_2500,w_2500/v1566304113/zbyftjoge5ckvuwbixph.jpg" alt="Newsletter Signup">
+        {% regionblock newsletter_image, type: image  %}
+          <img src="//res.cloudinary.com/traveltripperweb/image/upload/c_limit,h_2500,w_2500/v1566304113/zbyftjoge5ckvuwbixph.jpg" alt="Newsletter Signup">
+        {% endregionblock %}
       </div>
     </div>
     <div class="three-col__newsletter text-center">
-      <p class="h2">Newsletter<br>Sign-Up</p>
-      <p class="overline">DON'T MISS OUT ON ANY OF THE ACTION & STAY UP WITH US</p>
+      {% regionblock newsletter_header, type: header  %}
+        <p class="h2">Newsletter<br>Sign-Up</p>
+      {% endregionblock %}
+      {% regionblock newsletter_text, type: text  %}
+        <p class="overline">DON'T MISS OUT ON ANY OF THE ACTION & STAY UP WITH US</p>
+      {% endregionblock %}
       {% include forms/jotform/newsletter.html %}
     </div>
     <div class="three-col__content">
-      <p class="h3">Eat & Drink</p>
-      <p><a title="Food in Key West" href="/eat-drink/">Dining</a> at The Gates is relaxed and regionally inspired. From the convenience of our signature food truck The Blind Pig, to the energy of our outdoor bar, Rum Row, The Gates Hotel offers
-        imaginative cuisine, festive cocktails ensuring an unrivaled dining experience on the island.</p>
+      {% regionblock newsletter_text_2, type: text  %}
+        <p class="h3">Eat & Drink</p>
+      {% endregionblock %}
+      {% regionblock newsletter_text_3, type: text  %}
+        <p><a href="/eat-drink/">Dining</a> at The Gates is relaxed and regionally inspired. From the convenience of our signature food truck The Blind Pig, to the energy of our outdoor bar, Rum Row, The Gates Hotel offers imaginative cuisine, festive cocktails ensuring an unrivaled dining experience on the island.</p>
+      {% endregionblock %}
     </div>
   </div>
 </section>
