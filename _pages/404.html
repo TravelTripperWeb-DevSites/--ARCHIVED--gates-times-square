@@ -1,5 +1,5 @@
 ---
-layout: generic
+layout: 404_layout
 title_localized:
   en: Page Not Found
 meta_description_localized:
@@ -9,14 +9,3 @@ permalink_localized:
 meta_tags:
   robots:
 ---
-
-<section class="sitemap-links">
-  <ul>
-  {% assign items = site.data._menus.main.items %}
-  {% include nav/nav-item-list.html items=items %}
-  </ul>
-  <ul>
-  {% assign items = site.data._menus.footer.items %}
-  {% include nav/nav-item-list.html items=items %}
-  </ul>
-</section>
