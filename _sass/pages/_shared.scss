@@ -183,3 +183,28 @@
 .inner-hero {
   height: 320px;
 }
+
+.static-content {
+  .h4 {
+    margin-bottom: 10px;
+  }
+  ul, ol {
+    li {
+      font-family: $family-primary;
+      font-size: $display8-size;
+      font-weight: $display2-weight;
+      line-height: 24px;
+      color: $secondary;
+      letter-spacing: 1px;
+
+      a {
+        color: inherit;
+
+        &:hover {
+          color: $primary;
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
