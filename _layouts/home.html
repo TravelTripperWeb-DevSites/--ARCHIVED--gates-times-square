@@ -199,63 +199,76 @@ layout: default
   <div class="eat-drink__wrap">
     <div class="eat-drink__left">
       <div class="eat-drink__left__image objectfit">
-        <img src="//res.cloudinary.com/traveltripperweb/image/upload/c_limit,h_2500,w_2500/v1566390407/qst7cvspbdj3t79krt54.jpg" alt="The Blind Pig">
+        {% regionblock eat_drink_image, type: image  %}
+          <img src="//res.cloudinary.com/traveltripperweb/image/upload/c_limit,h_2500,w_2500/v1566390407/qst7cvspbdj3t79krt54.jpg" alt="The Blind Pig">
+        {% endregionblock %}
       </div>
       <div class="eat-drink__left__content">
         <div class="eat-drink__left__content__icons">
           <div class="blue-container beverage">
             <a href="javascript:void(0);" target="blank" title="Drink"></a>
-            <img src="//res.cloudinary.com/traveltripperweb/image/upload/c_limit,h_2500,w_2500/v1566391648/z7ntqx6c35xwau1cly52.png" class="width-full" alt="Drink">
-            <p class="h4">Drink</p>
+            {% regionblock eat_drink_drink_image, type: image  %}
+              <img src="//res.cloudinary.com/traveltripperweb/image/upload/c_limit,h_2500,w_2500/v1566391648/z7ntqx6c35xwau1cly52.png" class="width-full" alt="Drink">
+            {% endregionblock %}
+            {% regionblock eat_drink_drink_heading, type: header %}
+              <p class="h4">Drink</p>
+            {% endregionblock %}
           </div>
           <div class="blue-container deserts">
             <a href="javascript:void(0);" target="blank" title="eat"></a>
-            <img src="//res.cloudinary.com/traveltripperweb/image/upload/c_limit,h_2500,w_2500/v1566391635/zi1c00tk02djamalk2xr.png" class="width-full" alt="Eat">
-            <p class="h4">Eat</p>
+            {% regionblock eat_drink_eat_image, type: image %}
+              <img src="//res.cloudinary.com/traveltripperweb/image/upload/c_limit,h_2500,w_2500/v1566391635/zi1c00tk02djamalk2xr.png" class="width-full" alt="Eat">
+            {% endregionblock %}
+            {% regionblock eat_drink_eat_heading, type: header %}
+              <p class="h4">Eat</p>
+            {% endregionblock %}
           </div>
         </div>
         <div class="eat-drink__left__content__timings">
-          <p class="h2">The Blind Pig</p>
-          <ul>
-            <li>
-              <p class="h4"> Breakfast</p>
-            </li>
-            <li>
-              <p>Daily<br>
-                7:00 AM to 11:00 AM
-              </p>
-            </li>
-            <li></li>
-          </ul>
-          <ul>
-            <li>
-              <p class="h4">Lunch</p>
-            </li>
-            <li>
-              <p>Daily<br>
-                11:00 AM to 10:00pm
-              </p>
-            </li>
-            <li> </li>
-          </ul>
-          <ul>
-            <li>
-              <p class="h4">Dinner</p>
-            </li>
-            <li>
-              <p>Daily<br>
-                11:00 AM to 10:00pm
-              </p>
-            </li>
-            <li>
-              <a href="//res.cloudinary.com/traveltripperweb/raw/upload/v1566545848/d2xr0a6t1im75wqoavoq.pdf" class="next-slide" title="Next Slide" target="_blank">
-                <span class="next next--white">
-                  <i class="fal fa-chevron-right"></i>
-                </span>
-              </a>
-            </li>
-          </ul>
-          <ul>
+          {% regionblock eat_drink_main_heading, type: header %}
+            <p class="h2">The Blind Pig</p>
+          {% endregionblock %}
+          {% regionblock eat_drink_main_content, type: text %}
+            <ul>
+              <li>
+                <p class="h4"> Breakfast</p>
+              </li>
+              <li>
+                <p>Daily<br>
+                  7:00 AM to 11:00 AM
+                </p>
+              </li>
+              <li></li>
+            </ul>
+            <ul>
+              <li>
+                <p class="h4">Lunch</p>
+              </li>
+              <li>
+                <p>Daily<br>
+                  11:00 AM to 10:00pm
+                </p>
+              </li>
+              <li> </li>
+            </ul>
+            <ul>
+              <li>
+                <p class="h4">Dinner</p>
+              </li>
+              <li>
+                <p>Daily<br>
+                  11:00 AM to 10:00pm
+                </p>
+              </li>
+              <li>
+                <a href="//res.cloudinary.com/traveltripperweb/raw/upload/v1566545848/d2xr0a6t1im75wqoavoq.pdf" class="next-slide" title="Next Slide" target="_blank">
+                  <span class="next next--white">
+                    <i class="fal fa-chevron-right"></i>
+                  </span>
+                </a>
+              </li>
+            </ul>
+            <ul>
             <p class="h2">Rum Row</p>
             <ul>
               <li>
@@ -275,12 +288,16 @@ layout: default
               </li>
             </ul>
           </ul>
+          {% endregionblock %}
         </div>
       </div>
     </div>
     <div class="eat-drink__right">
       <div class="eat-drink__right__image objectfit">
-        <img src="//res.cloudinary.com/traveltripperweb/image/upload/c_limit,h_2500,w_2500/v1566390432/txrtds9gg8xmdftqvcre.jpg" alt="Bar">
+        {% regionblock eat_drink_bar_img, type: image %}        
+          <img src="//res.cloudinary.com/traveltripperweb/image/upload/c_limit,h_2500,w_2500/v1566390432/txrtds9gg8xmdftqvcre.jpg" alt="Bar">
+        {% endregionblock %}
+
       </div>
     </div>
   </div>
