@@ -2,6 +2,9 @@
 // ==========================================================================
 
 .location-wrap {
+  @include make-container;
+  width: auto;
+  max-width: 1270px;
   .col--left {
     @include media-breakpoint-up(md) {
       padding-right: 100px;

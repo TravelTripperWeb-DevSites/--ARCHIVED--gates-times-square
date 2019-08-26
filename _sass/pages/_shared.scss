@@ -185,6 +185,9 @@
 }
 
 .static-content {
+  @include make-container;
+  width: auto;
+  max-width: 1270px;
   .h4 {
     margin-bottom: 10px;
   }
