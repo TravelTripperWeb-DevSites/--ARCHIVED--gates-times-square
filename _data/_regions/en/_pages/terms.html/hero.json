@@ -29,6 +29,10 @@
         "description": ""
       }
     },
-    "_template": "hero"
+    "_template": "hero",
+    "hero_title": {
+      "content": "terms &amp; conditions",
+      "_template": "header"
+    }
   }
 ]
