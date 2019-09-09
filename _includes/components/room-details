@@ -4,7 +4,7 @@
 
 <section class="hero inner-hero mb-5" style="background-image: url('//res.cloudinary.com/traveltripperweb/image/upload/c_limit,h_2500,w_2500/v1565949200/rtxgbdena3iwksm1guwp.jpg');">
   <div class="hero__title">
-    <h1 class="h1">Comfort</h1>
+    <p class="h1">NYC Haven</p>
   </div>
 </section>
 
@@ -16,7 +16,7 @@
         {% include components/image image=room_image max_width=1900 %}
       </div>
       <div class="rooms-carousel__content">
-        <p class="h3" {% if sync %} ttweb-room-component="RoomName" {% endif %}>{{room_detail.name}}</p>
+        <h1 class="h3" {% if sync %} ttweb-room-component="RoomName" {% endif %}>{{room_detail.name}}</h1>
         <div class="rooms-carousel__tonight-rate">
           <div class="c-room__rate" ttweb-room-component="CrossOutRateContainer" data-tt-show-error="true"></div>
         </div>
@@ -41,11 +41,11 @@
   </div>
 </section>
 
-<section class="room-info" ttweb-component="Room" data-tt-selected-room="{{room.reztrip_room_id}}">
+<section class="room-info my-md-4 my-3" ttweb-component="Room" data-tt-selected-room="{{room.reztrip_room_id}}">
   <div class="room-info__row">
     <div class="room-info__content">
       <p class="overline overline--small mb-1">{{ room_detail.name }}</p>
-      <p class="h3">Room Information</p>
+      <h2 class="h3">Room Information</h2>
       <p class="overline overline--small">
         <span class="room-info__guest-size-max" {% if sync %}ttweb-room-component="RoomGuestSizeMax"{% endif %}>
           {% if room_detail.guest_size_max and room_detail.guest_size_max > 0 %}
@@ -63,7 +63,7 @@
       <div class="room-info__gallery__wrap">
         <img src="//res.cloudinary.com/traveltripperweb/image/upload/c_limit,h_2500,w_2500/v1566284866/fkgeezlfwc7mvkkwld6y.jpg" alt="Take a visual gallery">
         <div class="floating">
-          <p class="h3 light">Take a visual gallery</p>
+          <p class="h3 light">Tour the Gates Hotel Times Square</p>
           <a href="/galley/" class="btn btn--secondary btn--secondary--light">View Gallery</a>
         </div>
       </div>
@@ -93,13 +93,14 @@
   </div>
 </section>
 
+
 {% assign rooms = site.data._models.rooms | sort:"order" %}
 {% assign sync = true %}
 
 {% if rooms.size >= 3 %}
   <section class="other-items-slider">
     <div class="other-items-slider__container">
-      <p class="h3">More Rooms</p>
+      <h2 class="h3">Other Rooms Form THE GATES HOTEL TIMES SQUARE</h2>
       <div class="items-carousel align-items-stretch" role="listbox">
         {% for room in rooms %}
           <div class="other-items-slider__item text-center" ttweb-component="Room" data-tt-selected-room="{{room.reztrip_room_id}}" role="option">
@@ -110,7 +111,7 @@
                 </div>
               </div>
               <div class="other-items-slider__item__content-section d-flex align-items-center flex-column">
-                <p class="h5" {% if sync %} ttweb-room-component="RoomName" {% endif %} tabindex="0">{{ room.name }}</p>
+                <h3 class="h5" {% if sync %} ttweb-room-component="RoomName" {% endif %} tabindex="0">{{ room.name }}</h3>
                 <p {% if sync %}ttweb-room-component="RoomShortDescription"{% endif %} tabindex="0">{{room.short_description}}</p>
                 <a class="btn btn--primary" tabindex="-1" href="{{ room.id | permalink: model_dir: 'rooms' | downcase }}"><span>View Room</span></a>
               </div>

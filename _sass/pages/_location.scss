@@ -9,5 +9,15 @@
     @include media-breakpoint-up(md) {
       padding-right: 100px;
     }
+    ul{
+      li{
+        font-family: $family-primary;
+        font-size: $display8-size;
+        font-weight: $display2-weight;
+        line-height: 24px;
+        color: $secondary;
+        letter-spacing: 1px;
+      }
+    }
   }
 }

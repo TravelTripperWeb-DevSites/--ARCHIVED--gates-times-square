@@ -40,4 +40,4 @@
   </div>
 </div>
 
-{% include offers-carousel.html %}
+{% include offers-carousel-2.html %}
