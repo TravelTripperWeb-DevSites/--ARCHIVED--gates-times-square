@@ -66,7 +66,9 @@ logo:
   size: 117723
   path: "//res.cloudinary.com/traveltripperweb/image/upload/c_limit,h_2500,w_2500/v1568034095/eo63vxrlykmamnlnlz35.png"
   file_size: 
-  alt: TGHTS-Logo
+  alt: The Gates Times Square
+  caption: ''
+  description: ''
 logo_secondary:
   name: gates-hotel-times-square-secondary-logo
   content_type: image/png
