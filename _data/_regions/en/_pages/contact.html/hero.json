@@ -32,7 +32,6 @@
     "hero_title": {
       "content": "contact us",
       "_template": "header"
-    },
-    "skip_h1": true
+    }
   }
 ]
