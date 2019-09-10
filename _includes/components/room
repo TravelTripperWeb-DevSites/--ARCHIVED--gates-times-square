@@ -13,6 +13,7 @@
     </h3>
     <div class="c-room__tonightrate" tabindex="0">
       <div class="c-room__availability" ttweb-room-component="ScarcityMessage"></div>
+      <span>Tonight’s Rate</span>
       <div class="c-room__rate" ttweb-room-component="CrossOutRateContainer" data-tt-show-error="true"></div>
     </div>
     <div tabindex="0">

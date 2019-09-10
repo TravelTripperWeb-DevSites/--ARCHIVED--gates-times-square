@@ -98,10 +98,10 @@
 {% assign sync = true %}
 
 {% if rooms.size >= 3 %}
-  <section class="other-items-slider">
+  <section class="other-items-slider bg-white">
     <div class="other-items-slider__container">
       <h2 class="h3">Other Rooms Form THE GATES HOTEL TIMES SQUARE</h2>
-      <div class="items-carousel align-items-stretch" role="listbox">
+      <div class="room-details-carousel align-items-stretch" role="listbox">
         {% for room in rooms %}
           <div class="other-items-slider__item text-center" ttweb-component="Room" data-tt-selected-room="{{room.reztrip_room_id}}" role="option">
             <div class="other-items-slider__item__inner">
@@ -120,12 +120,12 @@
         {% endfor %}
       </div>
       <div class="home-slider-control">
-        <a href="javascript:void(0);" id="itemsSliderPrev" class="prev-slide" title="Previous Slide" tabindex="-1">
+        <a href="javascript:void(0);" id="roomsSliderPrev" class="prev-slide" title="Previous Slide" tabindex="-1">
           <span class="prev">
             <i class="fal fa-chevron-left"></i>
           </span>
         </a>
-        <a href="javascript:void(0);" id="itemsSliderNext" class="next-slide" title="Next Slide" tabindex="-1">
+        <a href="javascript:void(0);" id="roomsSliderNext" class="next-slide" title="Next Slide" tabindex="-1">
           <span class="next">
             <i class="fal fa-chevron-right"></i>
           </span>
@@ -134,3 +134,5 @@
     </div>
   </section>
 {% endif %}
+
+{% include offers-carousel.html %}

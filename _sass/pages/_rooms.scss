@@ -78,6 +78,19 @@
 
     &__tonightrate {
       margin-bottom: 24px;
+
+      .ttweb-cross-out-rate {
+        display: inline-block;
+
+        &__crossout {
+          display: none;
+        }
+      }
+
+      span {
+        display: inline-block;
+        margin-right: 10px;
+      }
     }
   }
 }
@@ -258,7 +271,7 @@
       &__wrap {
         position: relative;
         height: 250px;
-        
+
         @include media-breakpoint-up(md) {
           min-height: 475px;
           margin-top: -20px;

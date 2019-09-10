@@ -113,4 +113,29 @@ readyDoc(function() {
     }, 3000);
   }
 
+  if (document.getElementsByClassName("room-details-carousel")[0]) {
+    setTimeout(function() {
+      var otherRoomsSlider = tns({
+        container: '.room-details-carousel',
+        "items": 1,
+        "mouseDrag": true,
+        "swipeAngle": false,
+        "speed": 400,
+        "autoHeight": true,
+        "nav": false,
+        "prevButton": "#roomsSliderPrev",
+        "nextButton": "#roomsSliderNext",
+        "gutter": 25,
+        "responsive": {
+          "768": {
+            "items": 2
+          },
+          "992": {
+            "items": 3
+          }
+        },
+      });
+    }, 3000);
+  }
+
 });
