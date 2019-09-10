@@ -17,22 +17,22 @@ layout: default
         <ul>
           {% assign social = site.data.social %}
           {% if social.facebook.username %}
-            <li><a href="https://www.facebook.com/{{social.facebook.username}}">
+            <li><a href="https://www.facebook.com/{{social.facebook.username}}" aria-label="Follow on Facebook">
               <i class="fab fa-facebook-f"></i>
             </a></li>
           {% endif %}
           {% if social.twitter.username %}
-            <li><a href="https://twitter.com/{{social.twitter.username}}">
+            <li><a href="https://twitter.com/{{social.twitter.username}}" aria-label="Follow on twitter">
               <i class="fab fa-twitter"></i>
             </a></li>
           {% endif %}
           {% if social.instagram.username %}
-            <li><a href="https://instagram.com/{{social.instagram.username}}">
+            <li><a href="https://instagram.com/{{social.instagram.username}}" aria-label="Follow on instagram">
               <i class="fab fa-instagram"></i>
             </a></li>
           {% endif %}
           {% if social.googleplus.username %}
-            <li><a href="https://plus.google.com/{{social.googleplus.username}}/posts">
+            <li><a href="https://plus.google.com/{{social.googleplus.username}}/posts" aria-label="Follow on googleplus">
               <i class="fab fa-google-plus-g"></i>
             </a></li>
           {% endif %}
@@ -42,12 +42,12 @@ layout: default
     {% endfor %}
   </div>
   <div class="home-slider-control">
-    <a href="javascript:void(0);" id="homeSliderPrev" class="prev-slide" title="Previous Slide" tabindex="-1">
+    <a href="javascript:void(0);" id="homeSliderPrev" class="prev-slide" title="Previous Slide" aria-label="Previous Slide" tabindex="-1">
       <span class="prev">
         <i class="fal fa-chevron-left"></i>
       </span>
     </a>
-    <a href="javascript:void(0);" id="homeSliderNext" class="next-slide" title="Next Slide" tabindex="-1">
+    <a href="javascript:void(0);" id="homeSliderNext" class="next-slide" title="Next Slide" aria-label="Next Slide" tabindex="-1">
       <span class="next">
         <i class="fal fa-chevron-right"></i>
       </span>
@@ -148,12 +148,12 @@ layout: default
     <a href="/rooms/">[More +]</a>
   </div>
   <div class="home-slider-control">
-    <a href="javascript:void(0);" id="roomsCarouselPrev" class="prev-slide" title="Previous Slide" tabindex="-1">
+    <a href="javascript:void(0);" id="roomsCarouselPrev" class="prev-slide" title="Previous Slide" aria-label="Previous Slide" tabindex="-1">
       <span class="prev">
         <i class="fal fa-chevron-left"></i>
       </span>
     </a>
-    <a href="javascript:void(0);" id="roomsCarouselNext" class="next-slide" title="Next Slide" tabindex="-1">
+    <a href="javascript:void(0);" id="roomsCarouselNext" class="next-slide" title="Next Slide" aria-label="Next Slide" tabindex="-1">
       <span class="next">
         <i class="fal fa-chevron-right"></i>
       </span>
@@ -258,14 +258,13 @@ layout: default
                 </p>
               </li>
               <li>
-                <a href="//res.cloudinary.com/traveltripperweb/raw/upload/v1566545848/d2xr0a6t1im75wqoavoq.pdf" class="next-slide" title="Next Slide" target="_blank">
+                <a href="//res.cloudinary.com/traveltripperweb/raw/upload/v1566545848/d2xr0a6t1im75wqoavoq.pdf" class="next-slide" title="Next Slide" target="_blank" aria-label="Next Slide">
                   <span class="next next--white">
                     <i class="fal fa-chevron-right"></i>
                   </span>
                 </a>
               </li>
             </ul>
-            <ul>
             <h3 class="h2">Rum Row</h3>
             <ul>
               <li>
@@ -277,14 +276,13 @@ layout: default
                 </p>
               </li>
               <li>
-                <a href="//res.cloudinary.com/traveltripperweb/raw/upload/v1566545964/rrvl5uslx536io74q8gp.pdf" class="next-slide" target="_blank">
+                <a href="//res.cloudinary.com/traveltripperweb/raw/upload/v1566545964/rrvl5uslx536io74q8gp.pdf" class="next-slide" target="_blank" title="Next Slide" aria-label="Next Slide">
                   <span class="next next--white">
                     <i class="fal fa-chevron-right"></i>
                   </span>
                 </a>
               </li>
             </ul>
-          </ul>
           {% endregionblock %}
         </div>
       </div>
@@ -317,12 +315,12 @@ layout: default
     {% endfor %}
   </div>
   <div class="home-slider-control">
-    <a href="javascript:void(0);" id="pagesSliderPrev" class="prev-slide" title="Previous Slide" tabindex="-1">
+    <a href="javascript:void(0);" id="pagesSliderPrev" class="prev-slide" title="Previous Slide" aria-label="Previous Slide" tabindex="-1">
       <span class="prev">
         <i class="fal fa-chevron-left"></i>
       </span>
     </a>
-    <a href="javascript:void(0);" id="pagesSliderNext" class="next-slide" title="Next Slide" tabindex="-1">
+    <a href="javascript:void(0);" id="pagesSliderNext" class="next-slide" title="Next Slide" aria-label="Next Slide" tabindex="-1">
       <span class="next">
         <i class="fal fa-chevron-right"></i>
       </span>
