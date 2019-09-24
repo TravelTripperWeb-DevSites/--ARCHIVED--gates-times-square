@@ -1,0 +1,11 @@
+{% for banner in site.data._models.top-banner %}
+  {% if banner.featured == true %}
+    <!--Top Banner-->
+    <section class="top-banner" style="background-color: {{ banner.background-color }}">
+      <p style="color: {{ banner.banner-text-color }}">{{ banner.banner-text }}</p>
+      {% if banner.button == true %}
+      <a href="{{ banner.button-link }}" class="btn btn--secondary btn--secondary--light" id="top_banner_offer" title="{{ banner.button-text }}" target="_blank">{{ banner.button-text }}</a>
+      {% endif %}
+    </section>
+  {% endif %}
+{% endfor %}

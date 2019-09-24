@@ -1,11 +1,22 @@
 ---
-layout: sitemap_page_layout
-title_localized: 
+layout: generic
+title_localized:
   en: Sitemap
 meta_description_localized:
   en:
-permalink_localized: 
+permalink_localized:
   en: /sitemap/
 meta_tags:
   robots: noindex, follow
 ---
+
+<section class="sitemap-links">
+  <ul>
+  {% assign items = site.data._menus.main.items %}
+  {% include nav/nav-item-list.html items=items %}
+  </ul>
+  <ul>
+  {% assign items = site.data._menus.footer.items %}
+  {% include nav/nav-item-list.html items=items %}
+  </ul>
+</section>

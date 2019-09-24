@@ -1,0 +1,52 @@
+{% comment %}
+  note the nav.is-fixed-top must immediately precede div.main for div.main top-margin to work property
+{% endcomment %}
+
+<nav class="navbar greedy is-fixed-top nav--main" id="js-navbar--main">
+  {% include top-banner.html %}
+  <div class="container flex-nowrap navbar__inner">
+    <a class="navbar-brand" href="/">
+      <span class="nav__logo"
+        data-live-edit-settings='hotel_settings'
+        data-live-edit-settings-field='logo'
+        data-live-editable-type='image'
+      >
+        {% if site.data.hotel_settings.logo and site.data.hotel_settings.logo.url and site.data.hotel_settings.logo.url != '' %}
+          {% assign logo_url = site.data.hotel_settings.logo.url_xsmall | default: site.data.hotel_settings.logo.url %}
+          <img src="{{logo_url}}" alt="{{site.data.hotel_settings.logo.alt | default: 'Logo' }}" />
+        {% else %}
+          <span class="condensed-hotel-name">{{site.data.hotel_settings.name}}</span>
+        {% endif %}
+      </span>
+      <span class="nav__logo-secondary"
+        data-live-edit-settings='hotel_settings'
+        data-live-edit-settings-field='logo_secondary'
+        data-live-editable-type='image'
+      >
+        {% if site.data.hotel_settings.logo_secondary and site.data.hotel_settings.logo_secondary.url and site.data.hotel_settings.logo_secondary.url != '' %}
+          {% assign logo_url = site.data.hotel_settings.logo_secondary.url_xsmall | default: site.data.hotel_settings.logo_secondary.url %}
+          <img src="{{logo_url}}" alt="{{site.data.hotel_settings.logo_url.alt | default: 'Logo' }}" />
+        {% else %}
+          <span class="condensed-hotel-name">{{site.data.hotel_settings.name}}</span>
+        {% endif %}
+      </span>
+    </a>
+    <ul class="nav greedy-nav__links align-items-center text-uppercase justify-content-center pr-2">
+      {% assign items = site.data._menus.main.items %}
+      {% include nav/nav-item-list.html items=items %}
+      {% comment %}
+      {% include nav/language-nav.html %}
+      {% endcomment %}
+    </ul>
+    <a role="button" aria-label="menu" aria-expanded="false" data-target="navMenu" class="navbar__burger greedy-nav--menu mr-2">
+      <!-- <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span> -->
+    </a>
+    <ul class="nav--device greedy__hidden-links" navMenu>
+    </ul>
+    <div class="flex-shrink-0">
+      {% include components/booking-widget-button %}
+    </div>
+  </div>
+</nav>

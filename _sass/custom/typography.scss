@@ -1,0 +1,102 @@
+
+.h1,.h2,.h3,.h4,.h5,.h6 {
+  display: block;
+  margin: 0;
+  font-family: $family-primary;
+  font-weight: normal;
+}
+
+.h1 {
+  font-size: $display2-size;
+  font-weight: $display1-weight;
+  color: $white;
+  text-transform: uppercase;
+  letter-spacing: normal;
+
+  @include media-breakpoint-up(md) {
+    font-size: $display1-size;
+    letter-spacing: 6px;
+  }
+}
+
+.h2 {
+  font-size: $display5-size;
+  font-weight: $display1-weight;
+  color: $terciary;
+  letter-spacing: normal;
+
+  @include media-breakpoint-up(md) {
+    font-size: $display2-size;
+  }
+}
+
+.h3 {
+  font-size: $display4-size;
+  font-weight: $display4-weight;
+  color: $terciary;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.h4 {
+  font-size: $display5-size;
+  font-weight: $display4-weight;
+  color: $terciary;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.h5 {
+  font-size: $display7-size;
+  font-weight: $display3-weight;
+  color: $terciary;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.h6 {
+  font-size: $display8-size;
+  font-weight: $display4-weight;
+  color: $terciary;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.overline {
+  font-family: $family-primary;
+  font-size: $display7-size;
+  font-weight: $display1-weight;
+  color: $terciary;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+
+  &--small {
+    font-size: $display8-size;
+  }
+}
+
+p, .p {
+  font-family: $family-primary;
+  font-size: $display8-size;
+  font-weight: $display2-weight;
+  line-height: 24px;
+  color: $secondary;
+  letter-spacing: 1px;
+
+  a {
+    color: inherit;
+
+    &:hover {
+      color: $primary;
+      text-decoration: underline;
+    }
+  }
+}
+
+.light {
+  color: $white !important;
+}
+
+.dark {
+  color: $terciary !important;
+}
