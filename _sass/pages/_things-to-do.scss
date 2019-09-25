@@ -1,0 +1,8 @@
+.interactive-map {
+  @include make-container;
+  display: none;
+  max-width: 1260px;
+  @include media-breakpoint-up(md) {
+    display: block;
+  }
+}
