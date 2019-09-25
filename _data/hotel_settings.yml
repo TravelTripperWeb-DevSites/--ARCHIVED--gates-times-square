@@ -1,7 +1,7 @@
 ---
 latitude: 40.7591257
 longitude: -73.9859554
-map_zoom: 10
+map_zoom: 5
 name: Gates Hotel Times Square
 email: info@nighthotelTSQ.com
 phone_number: 123-123-1234
@@ -47,6 +47,7 @@ __EDITABLE_FIELDS__:
   longitude:
     type: float
 get_directions_url: https://goo.gl/maps/d9c5eEciAtAALBGd6
+map_url: https://goo.gl/maps/foYYsnBTTn8WBoFK6
 logo:
   name: TGHTS-Logo
   content_type: image/png

@@ -34,13 +34,13 @@ data-tile-style - options are
       <div class="location-popup">
         <div class="location-popup__row align-items-center">
           <div class="location-popup__text">
-            {% assign locationDirectionUrl = site.data.hotel_settings.get_directions %}
+            {% assign locationDirectionUrl = site.data.hotel_settings.map_url %}
             <span class="location-popup__name">{{site.data.hotel_settings.name}}</span>
             <a class="location-popup__address" href="{{locationDirectionUrl}}" target="_blank">{{site.data.hotel_settings.address.street1}}, {{site.data.hotel_settings.address.city}}, {{site.data.hotel_settings.address.state}} {{site.data.hotel_settings.address.zip_code}} </a>
             <a class="location-popup__directions" href="{{locationDirectionUrl}}" target="_blank" title="Get Directions">Get Directions</a>
           </div>
           <div class="location-popup__image">
-            <img src="//res.cloudinary.com/traveltripperweb/image/upload/c_limit,h_2500,w_2500/v1569323555/tzfeeyzaqczfrxhbc0ig.jpg" alt="{{site.data.hotel_settings.name}}">
+            <img src="//res.cloudinary.com/traveltripperweb/image/upload/c_limit,h_2500,w_2500/v1569395099/bidgn2pk9dzrlfwr6ld6.jpg" alt="{{site.data.hotel_settings.name}}">
           </div>
         </div>
       </div>
@@ -102,7 +102,7 @@ data-tile-style - options are
       {% endfor %}
     </ul>
   </div>
-  <div class="leaflet-map__map" data-latitude="{{site.data.hotel_settings.latitude}}" data-longitude="{{site.data.hotel_settings.longitude}}" data-tile-style="rastertiles/light_all">
+  <div class="leaflet-map__map" data-latitude="{{site.data.hotel_settings.latitude}}" data-longitude="{{site.data.hotel_settings.longitude}}" data-tile-style="rastertiles/light_all" data-fit-bounce="true">
   </div>
 </div>
 {% endif %}
