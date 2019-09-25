@@ -57,9 +57,9 @@
 
   .leaflet-div-icon {
     box-sizing: content-box;
-    width: 16px;
-    height: 16px;
-    background-color: $secondary;
+    width: 0;
+    height: 0;
+    background-color: transparent;
     border: 1px solid transparent;
     border-radius: 50%;
     &__label {
