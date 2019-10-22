@@ -7,32 +7,32 @@ layout: default
     {% for homeSlide in homeSlides %}
     <div class="home-hero-slider__item">
       <div class="home-hero-slider__image objectfit">
-        <img src="{{homeSlide.image.url_xlarge}}" alt="{{homeSlide.image.alt}}">
+        <img src="{{ homeSlide.image.url_xlarge }}" alt="{{ homeSlide.image.alt }}">
       </div>
       <div class="home-hero-slider__logo objectfit">
         <img src="//res.cloudinary.com/traveltripperweb/image/upload/c_limit,h_2500,w_2500/v1568034551/uswqwsqufxmguerr6klz.png" alt="Gates Logo">
       </div>
-      <div class="home-hero-slider__social-links">
+      <div class="home-hero-slider__social-links d-none">
         <p class="overline overline--small light">Follow Us</p>
         <ul>
           {% assign social = site.data.social %}
           {% if social.facebook.username %}
-            <li><a href="https://www.facebook.com/{{social.facebook.username}}" aria-label="Follow on Facebook">
+            <li><a href="https://www.facebook.com/{{ social.facebook.username }}" aria-label="Follow on Facebook">
               <i class="fab fa-facebook-f"></i>
             </a></li>
           {% endif %}
           {% if social.twitter.username %}
-            <li><a href="https://twitter.com/{{social.twitter.username}}" aria-label="Follow on twitter">
+            <li><a href="https://twitter.com/{{ social.twitter.username }}" aria-label="Follow on twitter">
               <i class="fab fa-twitter"></i>
             </a></li>
           {% endif %}
           {% if social.instagram.username %}
-            <li><a href="https://instagram.com/{{social.instagram.username}}" aria-label="Follow on instagram">
+            <li><a href="https://instagram.com/{{ social.instagram.username }}" aria-label="Follow on instagram">
               <i class="fab fa-instagram"></i>
             </a></li>
           {% endif %}
           {% if social.googleplus.username %}
-            <li><a href="https://plus.google.com/{{social.googleplus.username}}/posts" aria-label="Follow on googleplus">
+            <li><a href="https://plus.google.com/{{ social.googleplus.username }}/posts" aria-label="Follow on googleplus">
               <i class="fab fa-google-plus-g"></i>
             </a></li>
           {% endif %}
