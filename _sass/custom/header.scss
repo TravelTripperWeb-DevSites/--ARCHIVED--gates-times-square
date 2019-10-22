@@ -14,7 +14,7 @@
     padding: 8px 15px;
 
     @include media-breakpoint-up(md) {
-      padding: 26px 15px;
+      padding: 15px;
     }
   }
 
@@ -24,7 +24,7 @@
     @include transition(.3s);
 
     @include media-breakpoint-up(md) {
-      width: 180px;
+      width: 100px;
       margin: 0 auto;
     }
 
@@ -95,7 +95,7 @@
       letter-spacing: 1px;
 
       &:hover, &.active {
-        color: $quaternary;
+        color: $primary;
         text-decoration: none !important;
       }
     }
