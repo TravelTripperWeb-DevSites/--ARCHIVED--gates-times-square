@@ -1,23 +1,17 @@
-# Social Sharing
+---
 twitter:
-  username: NightHotelTSQ
+  username: ''
 facebook:
-  username: NightHotelTSQ
-  app_id:
-  publisher:
-og_image: # Open Graph/Twitter default site image
+  username: ''
+  app_id: 
+  publisher: 
+og_image: 
 instagram:
-  username: gates_times_square_hotel
-googleplus:
-  username: 104877954400890497245
-
-# For specifying social profiles
-# - https://developers.google.com/structured-data/customize/social-profiles
+  username: ''
 social:
-  type: # Person or Organization (defaults to Person)
-  name: # If the user or organization name differs from the site's name
-  links: # An array of links to social media profiles
-
+  type: 
+  name: 
+  links: 
 __EDITABLE_FIELDS__:
   instagram:
     label: Instagram Account
@@ -47,19 +41,17 @@ __EDITABLE_FIELDS__:
   og_image:
     hint: Open Graph/Twitter default site image
     type: image
-
   social:
     label: Social Profile
-    instructions: "For specifying social profiles: https://developers.google.com/structured-data/customize/social-profiles"
-
+    instructions: 'For specifying social profiles: https://developers.google.com/structured-data/customize/social-profiles'
     type: nested
     multiple: false
     fields:
       type:
         type: select
         options:
-          - Person
-          - Organization
+        - Person
+        - Organization
       name:
         type: string
         hint: If the user or organization name differs from the site's name
@@ -67,3 +59,5 @@ __EDITABLE_FIELDS__:
         instructions: Full URLs for social media profiles
         type: string
         multiple: true
+googleplus:
+  username: 104877954400890500000
