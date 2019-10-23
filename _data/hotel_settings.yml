@@ -12,8 +12,8 @@ address:
   zip_code: '10036'
 default_currency: USD
 default_timezone: America/New_York
-_hotel_id: NYCGTS
-_portal_id: gateshoteltimessquare
+_hotel_id: NYCOYO
+_portal_id: oyotimessquare
 __EDITABLE_FIELDS__:
   name:
     required: true
@@ -54,13 +54,13 @@ logo:
   name: oyo-timessquare-logo
   content_type: image/svg+xml
   date_added: 2019-10-22-052948
-  format: 
+  format:
   url: "//res.cloudinary.com/traveltripperweb/raw/upload/v1571736588/rtctv0u7lvpcoo9xdqlu.svg"
   url_raw: "//res.cloudinary.com/traveltripperweb/raw/upload/v1571736588/rtctv0u7lvpcoo9xdqlu.svg"
   resource_type: raw
   size: 3476
   path: "//res.cloudinary.com/traveltripperweb/raw/upload/v1571736588/rtctv0u7lvpcoo9xdqlu.svg"
-  file_size: 
+  file_size:
   alt: OYO Times Square
   caption: ''
   description: ''
@@ -68,13 +68,13 @@ logo_secondary:
   name: oyo-timessquare-logo
   content_type: image/svg+xml
   date_added: 2019-10-22-052948
-  format: 
+  format:
   url: "//res.cloudinary.com/traveltripperweb/raw/upload/v1571736588/rtctv0u7lvpcoo9xdqlu.svg"
   url_raw: "//res.cloudinary.com/traveltripperweb/raw/upload/v1571736588/rtctv0u7lvpcoo9xdqlu.svg"
   resource_type: raw
   size: 3476
   path: "//res.cloudinary.com/traveltripperweb/raw/upload/v1571736588/rtctv0u7lvpcoo9xdqlu.svg"
-  file_size: 
+  file_size:
   alt: OYO Times Square
   caption: ''
   description: ''
