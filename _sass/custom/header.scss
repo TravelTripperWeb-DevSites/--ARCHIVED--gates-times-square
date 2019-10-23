@@ -104,7 +104,7 @@
       display: none;
 
       @include media-breakpoint-up(md) {
-        display: inline-block;
+        display: block;
       }
 
       img {
