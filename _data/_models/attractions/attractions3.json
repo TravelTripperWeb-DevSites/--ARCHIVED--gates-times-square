@@ -1,0 +1,370 @@
+{
+  "order": 3,
+  "name": "City Kitchen",
+  "location": {
+    "name": "City Kitchen",
+    "address": "700 8th Ave, New York, NY 10036, USA",
+    "phone": "(646) 863-0901",
+    "place_id": "ChIJz8ahe1RYwokRxHCWg4LVMvQ",
+    "reference": "ChIJz8ahe1RYwokRxHCWg4LVMvQ",
+    "latitude": 40.7585759,
+    "longitude": -73.98851839999998,
+    "google_place": {
+      "address_components": [
+        {
+          "long_name": "700",
+          "short_name": "700",
+          "types": [
+            "street_number"
+          ]
+        },
+        {
+          "long_name": "8th Avenue",
+          "short_name": "8th Ave",
+          "types": [
+            "route"
+          ]
+        },
+        {
+          "long_name": "Manhattan",
+          "short_name": "Manhattan",
+          "types": [
+            "sublocality_level_1",
+            "sublocality",
+            "political"
+          ]
+        },
+        {
+          "long_name": "New York",
+          "short_name": "New York",
+          "types": [
+            "locality",
+            "political"
+          ]
+        },
+        {
+          "long_name": "New York County",
+          "short_name": "New York County",
+          "types": [
+            "administrative_area_level_2",
+            "political"
+          ]
+        },
+        {
+          "long_name": "New York",
+          "short_name": "NY",
+          "types": [
+            "administrative_area_level_1",
+            "political"
+          ]
+        },
+        {
+          "long_name": "United States",
+          "short_name": "US",
+          "types": [
+            "country",
+            "political"
+          ]
+        },
+        {
+          "long_name": "10036",
+          "short_name": "10036",
+          "types": [
+            "postal_code"
+          ]
+        }
+      ],
+      "adr_address": "<span class=\"street-address\">700 8th Ave</span>, <span class=\"locality\">New York</span>, <span class=\"region\">NY</span> <span class=\"postal-code\">10036</span>, <span class=\"country-name\">USA</span>",
+      "formatted_address": "700 8th Ave, New York, NY 10036, USA",
+      "formatted_phone_number": "(646) 863-0901",
+      "geometry": {
+        "location": {
+          "lat": 40.7585759,
+          "lng": -73.98851839999998
+        },
+        "viewport": {
+          "south": 40.7571936197085,
+          "west": -73.98989713029152,
+          "north": 40.75989158029149,
+          "east": -73.9871991697085
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
+      "id": "7e9f05c278a1973552d6c60b8ec6868d97843b72",
+      "international_phone_number": "+1 646-863-0901",
+      "name": "City Kitchen",
+      "opening_hours": {
+        "open_now": false,
+        "periods": [
+          {
+            "close": {
+              "day": 0,
+              "time": "2100",
+              "hours": 21,
+              "minutes": 0,
+              "nextDate": 1572224400000
+            },
+            "open": {
+              "day": 0,
+              "time": "0630",
+              "hours": 6,
+              "minutes": 30,
+              "nextDate": 1572172200000
+            }
+          },
+          {
+            "close": {
+              "day": 1,
+              "time": "2100",
+              "hours": 21,
+              "minutes": 0,
+              "nextDate": 1572310800000
+            },
+            "open": {
+              "day": 1,
+              "time": "0630",
+              "hours": 6,
+              "minutes": 30,
+              "nextDate": 1572258600000
+            }
+          },
+          {
+            "close": {
+              "day": 2,
+              "time": "2100",
+              "hours": 21,
+              "minutes": 0,
+              "nextDate": 1572397200000
+            },
+            "open": {
+              "day": 2,
+              "time": "0630",
+              "hours": 6,
+              "minutes": 30,
+              "nextDate": 1572345000000
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "2100",
+              "hours": 21,
+              "minutes": 0,
+              "nextDate": 1571878800000
+            },
+            "open": {
+              "day": 3,
+              "time": "0630",
+              "hours": 6,
+              "minutes": 30,
+              "nextDate": 1571826600000
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "2330",
+              "hours": 23,
+              "minutes": 30,
+              "nextDate": 1571974200000
+            },
+            "open": {
+              "day": 4,
+              "time": "0630",
+              "hours": 6,
+              "minutes": 30,
+              "nextDate": 1571913000000
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "2330",
+              "hours": 23,
+              "minutes": 30,
+              "nextDate": 1572060600000
+            },
+            "open": {
+              "day": 5,
+              "time": "0630",
+              "hours": 6,
+              "minutes": 30,
+              "nextDate": 1571999400000
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "2330",
+              "hours": 23,
+              "minutes": 30,
+              "nextDate": 1572147000000
+            },
+            "open": {
+              "day": 6,
+              "time": "0630",
+              "hours": 6,
+              "minutes": 30,
+              "nextDate": 1572085800000
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: 6:30 am – 9:00 pm",
+          "Tuesday: 6:30 am – 9:00 pm",
+          "Wednesday: 6:30 am – 9:00 pm",
+          "Thursday: 6:30 am – 11:30 pm",
+          "Friday: 6:30 am – 11:30 pm",
+          "Saturday: 6:30 am – 11:30 pm",
+          "Sunday: 6:30 am – 9:00 pm"
+        ]
+      },
+      "photos": [
+        {
+          "height": 1311,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/113559521831915085902/photos\">City Kitchen</a>"
+          ],
+          "width": 2048
+        },
+        {
+          "height": 3024,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/105590110266448451770/photos\">Jonathan Yu</a>"
+          ],
+          "width": 4032
+        },
+        {
+          "height": 3024,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/112572435651049911985/photos\">Katsuhiko Ohashi</a>"
+          ],
+          "width": 3024
+        },
+        {
+          "height": 4032,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/114583258099781397167/photos\">ぷーあー路</a>"
+          ],
+          "width": 3024
+        },
+        {
+          "height": 2736,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/111960347595358584809/photos\">steppi</a>"
+          ],
+          "width": 3648
+        },
+        {
+          "height": 3120,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/108909344168398060997/photos\">Boyce Dimaala</a>"
+          ],
+          "width": 4160
+        },
+        {
+          "height": 3840,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/113559521831915085902/photos\">City Kitchen</a>"
+          ],
+          "width": 5760
+        },
+        {
+          "height": 3840,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/113559521831915085902/photos\">City Kitchen</a>"
+          ],
+          "width": 5760
+        },
+        {
+          "height": 4032,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/102118359919234737893/photos\">Kimberly Yuenmak</a>"
+          ],
+          "width": 3024
+        },
+        {
+          "height": 4000,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/104111246635874032234/photos\">ZAGAT</a>"
+          ],
+          "width": 6000
+        }
+      ],
+      "place_id": "ChIJz8ahe1RYwokRxHCWg4LVMvQ",
+      "plus_code": {
+        "compound_code": "Q256+CH New York, United States",
+        "global_code": "87G8Q256+CH"
+      },
+      "price_level": 1,
+      "rating": 4.199999999999999,
+      "reference": "ChIJz8ahe1RYwokRxHCWg4LVMvQ",
+      "reviews": [
+        {
+          "author_name": "Reaven Veaceslav",
+          "author_url": "https://www.google.com/maps/contrib/106418359104863353583/reviews",
+          "language": "en",
+          "profile_photo_url": "https://lh5.ggpht.com/-P9PDOzQ4S58/AAAAAAAAAAI/AAAAAAAAAAA/qAc5DnU0iqs/s128-c0x00000000-cc-rp-mo-ba4/photo.jpg",
+          "rating": 5,
+          "relative_time_description": "2 months ago",
+          "text": "This is a great place to get relatively okay priced food (for Manhattan) and a respectable selection of options. They offer a sushi location, a rice bowl place, donuts, tacos, and other things in between. \n\nI highly suggest this to the lower budget traveler who still wants a local food experience instead of chain fast food.",
+          "time": 1566169541
+        },
+        {
+          "author_name": "Brian Conway",
+          "author_url": "https://www.google.com/maps/contrib/112995028695353175182/reviews",
+          "language": "en",
+          "profile_photo_url": "https://lh6.ggpht.com/-ellkTK8zdU4/AAAAAAAAAAI/AAAAAAAAAAA/bkxRBhgx1fg/s128-c0x00000000-cc-rp-mo-ba4/photo.jpg",
+          "rating": 2,
+          "relative_time_description": "2 months ago",
+          "text": "Not what I had expected.  Small portions for the money. It had a variety of food places to choose from. I believe there were about 5 or 6 places, all with something different to offer.  We opted for the sushi. Personally I have had better and a bigger portion from a grocery store.  The miso soup was the best part of our meal. We might try a different place in there and see if that's better.",
+          "time": 1564531931
+        },
+        {
+          "author_name": "Latoya Butler",
+          "author_url": "https://www.google.com/maps/contrib/105572366255818064965/reviews",
+          "language": "en",
+          "profile_photo_url": "https://lh6.ggpht.com/-6amHDgjo7Rc/AAAAAAAAAAI/AAAAAAAAAAA/S-ja7V35c6g/s128-c0x00000000-cc-rp-mo/photo.jpg",
+          "rating": 4,
+          "relative_time_description": "a month ago",
+          "text": "I enjoyed my fish tacos from Gabriela's Taqueria very tasty. City Kitchen is like a smorgasbord there are like 5 or 6 places to choose from. I also liked the glazed donut from Dough but it was on the expensive side for one donut. I will go back to City Kitchen. 👍🏾",
+          "time": 1569020158
+        },
+        {
+          "author_name": "brooke jeffrey",
+          "author_url": "https://www.google.com/maps/contrib/114751461579830751536/reviews",
+          "language": "en",
+          "profile_photo_url": "https://lh5.ggpht.com/-2JhuJpd4XAs/AAAAAAAAAAI/AAAAAAAAAAA/Y8LIPCFD6rM/s128-c0x00000000-cc-rp-mo/photo.jpg",
+          "rating": 5,
+          "relative_time_description": "2 months ago",
+          "text": "Finest spot to buy something when in a rush. Their customer service is efficient, rates are affordable, fantastic vibes. Would recommend to others",
+          "time": 1565972237
+        },
+        {
+          "author_name": "Hillery Baker",
+          "author_url": "https://www.google.com/maps/contrib/100181356646701170985/reviews",
+          "language": "en",
+          "profile_photo_url": "https://lh3.ggpht.com/-cffyLjH3VzM/AAAAAAAAAAI/AAAAAAAAAAA/7Xfp0TeEAJ4/s128-c0x00000000-cc-rp-mo-ba3/photo.jpg",
+          "rating": 5,
+          "relative_time_description": "a month ago",
+          "text": "I love City Kitchen. Featuring over half a dozen different stalls from popular New York eateries, this is a great place to grab a quick meal in a hip, but relaxed setting.",
+          "time": 1568900022
+        }
+      ],
+      "scope": "GOOGLE",
+      "types": [
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "url": "https://maps.google.com/?cid=17596361450620088516",
+      "user_ratings_total": 924,
+      "utc_offset": -240,
+      "vicinity": "700 8th Avenue, New York",
+      "website": "http://citykitchen.rownyc.com/",
+      "html_attributions": null,
+      "utc_offset_minutes": -240
+    }
+  }
+}
