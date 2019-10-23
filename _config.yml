@@ -1,10 +1,10 @@
 ---
-title: Bedrock
+title: OYO Times Square
 title_separator: "|"
-name: Hotel Property Name
-description: Site default description.
-url: 
-repository: 
+name: OYO Times Square
+description: You have a new option among hotels in Times Square: the OYO Hotel provides a boutique experience in the middle of Midtown Manhattan.
+url: https://www.oyotimessquare.com
+repository:
 default_lang: en
 languages:
 - en
@@ -72,7 +72,7 @@ sass:
   - _sass
   style: compressed
 permalink: pretty
-timezone: 
+timezone:
 page_gen:
 - data: offers
   template: offer_layout
