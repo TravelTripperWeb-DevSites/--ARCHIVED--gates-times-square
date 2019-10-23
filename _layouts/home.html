@@ -1,0 +1,223 @@
+---
+layout: default
+---
+<section class="home-hero-slider">
+  <div class="home-hero-slider__inner">
+    {% assign homeSlides = site.data._models.home-slider | sort: "order" | reverse %}
+    {% for homeSlide in homeSlides %}
+    <div class="home-hero-slider__item">
+      <div class="home-hero-slider__image objectfit">
+        <img src="{{ homeSlide.image.url_xlarge }}" alt="{{ homeSlide.image.alt }}">
+      </div>
+      <div class="home-hero-slider__social-links d-none">
+        <p class="overline overline--small light">Follow Us</p>
+        <ul>
+          {% assign social = site.data.social %}
+          {% if social.facebook.username %}
+            <li><a href="https://www.facebook.com/{{ social.facebook.username }}" aria-label="Follow on Facebook">
+              <i class="fab fa-facebook-f"></i>
+            </a></li>
+          {% endif %}
+          {% if social.twitter.username %}
+            <li><a href="https://twitter.com/{{ social.twitter.username }}" aria-label="Follow on twitter">
+              <i class="fab fa-twitter"></i>
+            </a></li>
+          {% endif %}
+          {% if social.instagram.username %}
+            <li><a href="https://instagram.com/{{ social.instagram.username }}" aria-label="Follow on instagram">
+              <i class="fab fa-instagram"></i>
+            </a></li>
+          {% endif %}
+          {% if social.googleplus.username %}
+            <li><a href="https://plus.google.com/{{ social.googleplus.username }}/posts" aria-label="Follow on googleplus">
+              <i class="fab fa-google-plus-g"></i>
+            </a></li>
+          {% endif %}
+        </ul>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+  <div class="home-slider-control">
+    <a href="javascript:void(0);" id="homeSliderPrev" class="prev-slide" title="Previous Slide" aria-label="Previous Slide" tabindex="-1">
+      <span class="prev">
+        <i class="fal fa-chevron-left"></i>
+      </span>
+    </a>
+    <a href="javascript:void(0);" id="homeSliderNext" class="next-slide" title="Next Slide" aria-label="Next Slide" tabindex="-1">
+      <span class="next">
+        <i class="fal fa-chevron-right"></i>
+      </span>
+    </a>
+  </div>
+</section>
+
+<section class="home-page-intro">
+  <div class="home-page-intro__wrap">
+    <div class="home-page-intro__left">
+      <div class="home-page-intro__left__content">
+        {% regionblock intro_header, type: header  %}
+          <h1 class="h3">Welcome to Times Square NYC</h1>
+        {% endregionblock %}
+        {% regionblock intro_text, type: text  %}
+          <p>Experience everything that makes NYC buzz! Join us at the Gates, a sleek, modern hotel in the heart of Midtown Manhattan West, where you’ll find yourself less than half a block from Times Square, the Theater District and Fifth Avenue, three blocks from Restaurant Row, and four from Rockefeller Center. Walk just a bit further and you’re at the Empire State Building, Central Park, and Greenwich Village. </p>
+          <p>Take in the sights and relax in style. Our look is distinct: sleek made comfortable with exquisite lighting, interesting color schemes, and the finest amenities throughout the hotel.</p>
+        {% endregionblock %}
+      </div>
+      <div class="home-page-intro__left__weather-widget">
+        <div class="home-page-intro__left__weather-widget__bg objectfit">
+          {% regionblock intro_img1, type: image  %}
+            <img src="//res.cloudinary.com/traveltripperweb/image/upload/c_limit,h_2500,w_2500/v1566135055/vbanbj2or4pxrcjoawmi.jpg" alt="Weather Widget background">
+          {% endregionblock %}
+        </div>
+        <div class="weather-widget-box">
+          <div class="weather" id="weather"></div>
+        </div>
+      </div>
+    </div>
+    <div class="home-page-intro__right">
+      <div class="home-page-intro__right__gallery">
+        <div class="home-page-intro__right__gallery__image objectfit">
+          {% regionblock intro_img2, type: image  %}
+            <img src="//res.cloudinary.com/traveltripperweb/image/upload/c_limit,h_2500,w_2500/v1566293980/zsdpko4sjtkytsuyycze.jpg" alt="Gallery">
+          {% endregionblock %}
+        </div>
+        <div class="home-page-intro__right__gallery__text">
+          {% regionblock intro_sub_header, type: header  %}
+            <h2 class="h3 light">Explore NYC and the Gates</h2>
+          {% endregionblock %}
+          {% regionblock intro_link, type: text  %}
+            <a class="btn btn--secondary btn--secondary--light" href="/gallery/">View Gallery</a>
+          {% endregionblock %}
+        </div>
+      </div>
+      <div class="home-page-intro__right__amenity">
+        <div class="home-page-intro__right__amenity__row align-items-center">
+          <div class="home-page-intro__right__amenity__image">
+            <div class="objectfit">
+              {% regionblock intro_img3, type: image  %}
+                <img src="//res.cloudinary.com/traveltripperweb/image/upload/c_limit,h_2500,w_2500/v1566297219/jves9fkuo1stu8wonxjs.jpg" alt="Pet Friendly">
+              {% endregionblock %}
+            </div>
+          </div>
+          <div class="home-page-intro__right__amenity__content">
+            {% regionblock intro_header_2, type: header  %}
+              <h2 class="h3">A PET FRIENDLY HOTEL</h2>
+            {% endregionblock %}
+            {% regionblock intro_text_2, type: text  %}
+              <p>You know your dog would love a trip to New York! The Gates Hotel Times Square welcomes furry friends and even offers a box of goodies for their stay.</p>
+              <p class="small">Fees: $25 per pet per day<br>
+              Weight Limit: 50 pounds or lighter</p>
+            {% endregionblock %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="rooms-carousel">
+  <div class="rooms-carousel__inner">
+    {% assign rooms = site.data._models.rooms | sort: "order" | reverse %}
+    {% assign sync = true %}
+    {% for room in rooms limit:4 %}
+    {% assign featured_image = room.featured_image | default: room.images[0] %}
+    <div class="rooms-carousel__item" ttweb-component="Room" data-tt-selected-room="{{room.reztrip_room_id}}">
+      <div class="rooms-carousel__image objectfit" {% if sync %} ttweb-room-component="RoomPrimaryImage" {% endif %}>
+        {% include components/image image=featured_image max_width=1900 %}
+      </div>
+      <div class="rooms-carousel__content">
+        <h3 class="h3" {% if sync %} ttweb-room-component="RoomName" {% endif %}>{{room.name}}</h3>
+        <p class="rooms-carousel__content__description">{{room.short_description}}</p>
+        <a class="btn btn--primary" href="/rooms/">View All Rooms</a>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+  <div class="rooms-carousel__room-titles">
+    <ul>
+      {% for room in rooms limit:4 %}
+      <li data-item="{{forloop.index0}}" class="rooms-carousel__room-titles__item {% if forloop.index == 1 %} active {% endif %}" onclick="changeRoomSlide({{forloop.index}})">
+        {{room.name}}
+      </li>
+      {% endfor %}
+    </ul>
+    <a href="/rooms/">[More +]</a>
+  </div>
+  <div class="home-slider-control">
+    <a href="javascript:void(0);" id="roomsCarouselPrev" class="prev-slide" title="Previous Slide" aria-label="Previous Slide" tabindex="-1">
+      <span class="prev">
+        <i class="fal fa-chevron-left"></i>
+      </span>
+    </a>
+    <a href="javascript:void(0);" id="roomsCarouselNext" class="next-slide" title="Next Slide" aria-label="Next Slide" tabindex="-1">
+      <span class="next">
+        <i class="fal fa-chevron-right"></i>
+      </span>
+    </a>
+  </div>
+</section>
+
+{% include offers-carousel.html %}
+
+<section class="three-col">
+  <div class="three-col__row">
+    <div class="three-col__image">
+      <div class="objectfit">
+        {% regionblock newsletter_image, type: image  %}
+          <img src="//res.cloudinary.com/traveltripperweb/image/upload/c_limit,h_2500,w_2500/v1566304113/zbyftjoge5ckvuwbixph.jpg" alt="Newsletter Signup">
+        {% endregionblock %}
+      </div>
+    </div>
+    <div class="three-col__newsletter text-center">
+      {% regionblock newsletter_header, type: header  %}
+        <h3 class="h2">The Gates Hotel<br>Newsletter</h3>
+      {% endregionblock %}
+      {% regionblock newsletter_text, type: text  %}
+        <p class="overline">Keep up on our special offers and NYC events.</p>
+      {% endregionblock %}
+      {% include forms/jotform/newsletter.html %}
+    </div>
+    <div class="three-col__content">
+      {% regionblock newsletter_text_2, type: text  %}
+        <p class="h3">Eat & Drink at <br>Gates Times Square</p>
+      {% endregionblock %}
+      {% regionblock newsletter_text_3, type: text  %}
+        <p>Our lobby bar is a delightful spot for a cocktail and light bites. Our location is unparalleled for its proximity to restaurants serving cuisine from the world over—and beloved New York favorites like perfectly made cheesecake. We’ll be happy to help you find just the right place. </p>
+      {% endregionblock %}
+    </div>
+  </div>
+</section>
+
+
+<section class="pages-slider">
+  <div class="pages-slider__inner">
+    {% assign pagesSlides = site.data._models.pages-carousel | sort: "order" | reverse %}
+    {% for pagesSlide in pagesSlides %}
+    <div class="pages-slider__item">
+      <div class="pages-slider__image objectfit">
+        <img src="{{pagesSlide.image.url_xlarge}}" alt="{{pagesSlide.image.alt}}">
+      </div>
+      <div class="pages-slider__content">
+        <h3 class="h3">{{pagesSlide.title}}</h3>
+        <p class="pages-slider__content__description">{{pagesSlide.description}}</p>
+        <a class="btn btn--primary" href="{{pagesSlide.button_link}}">{{pagesSlide.button_text}}</a>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+  <div class="home-slider-control">
+    <a href="javascript:void(0);" id="pagesSliderPrev" class="prev-slide" title="Previous Slide" aria-label="Previous Slide" tabindex="-1">
+      <span class="prev">
+        <i class="fal fa-chevron-left"></i>
+      </span>
+    </a>
+    <a href="javascript:void(0);" id="pagesSliderNext" class="next-slide" title="Next Slide" aria-label="Next Slide" tabindex="-1">
+      <span class="next">
+        <i class="fal fa-chevron-right"></i>
+      </span>
+    </a>
+  </div>
+</section>
+
+{% region intro, type:mixed %}

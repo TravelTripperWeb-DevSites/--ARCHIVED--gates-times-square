@@ -1,3 +1,69 @@
-<div class="copyright m-2">
-  &copy; {{ "now" | date: "%Y" }}
-</div>
+<footer class="footer">
+  <div class="footer__wrap">
+    <div class="footer__row">
+      <div class="footer__logo">
+        <a href="/">
+          <span  data-live-edit-settings='hotel_settings' data-live-edit-settings-field='logo' data-live-editable-type='image'>
+            {% if site.data.hotel_settings.logo and site.data.hotel_settings.logo.url and site.data.hotel_settings.logo.url != '' %}
+            {% assign logo_url = site.data.hotel_settings.logo.url_xsmall | default: site.data.hotel_settings.logo.url %}
+              <img src="{{ logo_url }}" alt="{{ site.data.hotel_settings.logo.alt | default: 'Logo' }}" />
+            {% else %}
+              <span class="condensed-hotel-name">{{ site.data.hotel_settings.name }}</span>
+            {% endif %}
+          </span>
+        </a>
+      </div>
+      <div class="footer__contact">
+        <p class="h6" tabindex="0">Contact Us</p>
+        <p><a href="{{ site.data.hotel_settings.get_directions_url }}" target="_blank">{{ site.data.hotel_settings.address.street1 }}<br>{{ site.data.hotel_settings.address.state }}, {{ site.data.hotel_settings.address.city }} {{ site.data.hotel_settings.address.zip_code }}<br>{{ site.data.hotel_settings.address.country }}</a></p>
+        <p><a href="tel:{{ site.data.hotel_settings.phone }}">{{ site.data.hotel_settings.phone }}</a><br>
+        <a href="mailto:{{ site.data.hotel_settings.email }}">{{ site.data.hotel_settings.email }}</a>
+        {% if site.data.hotel_settings.reservations_email and site.data.hotel_settings.reservations_email != '' %}
+          <br/>
+          <a href="tel:{{ site.data.hotel_settings.reservations_email }}">{{ site.data.hotel_settings.reservations_email }}</a><br>
+        {% endif %}
+        </p>
+      </div>
+      <div class="footer__links">
+        <p class="h6" tabindex="0">Learn More</p>
+        <ul>
+        {% assign items = site.data._menus.main.items %}
+        {% include nav/nav-item-list.html items=items %}
+        </ul>
+        <ul>
+        {% assign items = site.data._menus.footer.items %}
+        {% include nav/nav-item-list.html items=items %}
+        </ul>
+      </div>
+      <div class="footer__newsletter">
+        <div class="footer__newsletter__wrap">
+          <form action="">
+            <div class="form-group">
+              <input type="text" class="form-control" name="" id="" placeholder="Your Email" aria-label="Enter your email">
+            </div>
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" name="" id="terms-service">
+              <label class="form-check-label" for="terms-service">I agree to the <a href="/terms/">Terms of Service</a> and <a href="/privacy/">Privacy Policy</a>.</label>
+            </div>
+            <button type="submit" class="btn btn--primary">Submit</button>
+          </form>
+        </div>
+        <div class="credits">
+          <a href="/accessibility-statement/" title="Accessibility Statement">
+            <img src="//res.cloudinary.com/traveltripperweb/image/upload/c_limit,h_2500,w_2500/v1565605210/u855s9mepdjty49tvifs.png" alt="WCAG 2.1 ADA Compliant Powered by Travel Tripper">
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer__copyrights">
+    <div class="footer__copyrights__wrap">
+      <p class="light">&copy; {{ site.data.hotel_settings.name }} {{ "now" | date: "%Y" }}. All Rights Reserved</p>
+      <div class="footer__copyrights__links">
+        <a href="http://hhonors3.hilton.com/en/promotions/privacy-policy/english.html" target="_blank">Global Privacy Statement</a>
+        <a href="http://hhonors3.hilton.com/en/policy/cookies-statement/english.html" target="_blank">Cookies Statement</a>
+        <a href="http://hhonors3.hilton.com/en/policy/site-usage-agreement/english.html" target="_blank">Site Usage Agreement</a>
+      </div>
+    </div>
+  </div>
+</footer>
