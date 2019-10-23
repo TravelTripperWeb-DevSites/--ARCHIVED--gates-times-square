@@ -104,7 +104,7 @@
       display: none;
 
       @include media-breakpoint-up(md) {
-        display: inline-block;
+        display: block;
       }
 
       img {
@@ -165,6 +165,10 @@
   &.nav--active {
     background: $white;
     @include transition(.3s);
+  }
+
+  .greedy-nav__links {
+    width: 100%;
   }
 
   .greedy__hidden-links {

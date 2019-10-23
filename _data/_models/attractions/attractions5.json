@@ -1,0 +1,370 @@
+{
+  "order": 5,
+  "name": "New York Public Library",
+  "location": {
+    "name": "New York Public Library - Stephen A. Schwarzman Building",
+    "address": "476 5th Ave, New York, NY 10018, USA",
+    "phone": "(917) 275-6975",
+    "place_id": "ChIJqaiomQBZwokRTHOaUG7fUTs",
+    "reference": "ChIJqaiomQBZwokRTHOaUG7fUTs",
+    "latitude": 40.75318230000001,
+    "longitude": -73.98225339999999,
+    "google_place": {
+      "address_components": [
+        {
+          "long_name": "476",
+          "short_name": "476",
+          "types": [
+            "street_number"
+          ]
+        },
+        {
+          "long_name": "5th Avenue",
+          "short_name": "5th Ave",
+          "types": [
+            "route"
+          ]
+        },
+        {
+          "long_name": "Manhattan",
+          "short_name": "Manhattan",
+          "types": [
+            "sublocality_level_1",
+            "sublocality",
+            "political"
+          ]
+        },
+        {
+          "long_name": "New York",
+          "short_name": "New York",
+          "types": [
+            "locality",
+            "political"
+          ]
+        },
+        {
+          "long_name": "New York County",
+          "short_name": "New York County",
+          "types": [
+            "administrative_area_level_2",
+            "political"
+          ]
+        },
+        {
+          "long_name": "New York",
+          "short_name": "NY",
+          "types": [
+            "administrative_area_level_1",
+            "political"
+          ]
+        },
+        {
+          "long_name": "United States",
+          "short_name": "US",
+          "types": [
+            "country",
+            "political"
+          ]
+        },
+        {
+          "long_name": "10018",
+          "short_name": "10018",
+          "types": [
+            "postal_code"
+          ]
+        }
+      ],
+      "adr_address": "<span class=\"street-address\">476 5th Ave</span>, <span class=\"locality\">New York</span>, <span class=\"region\">NY</span> <span class=\"postal-code\">10018</span>, <span class=\"country-name\">USA</span>",
+      "formatted_address": "476 5th Ave, New York, NY 10018, USA",
+      "formatted_phone_number": "(917) 275-6975",
+      "geometry": {
+        "location": {
+          "lat": 40.75318230000001,
+          "lng": -73.98225339999999
+        },
+        "viewport": {
+          "south": 40.7519509197085,
+          "west": -73.9831519802915,
+          "north": 40.7546488802915,
+          "east": -73.98045401970847
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/school-71.png",
+      "id": "0ddfa876ffc305e1b241cbac33601e82d347775b",
+      "international_phone_number": "+1 917-275-6975",
+      "name": "New York Public Library - Stephen A. Schwarzman Building",
+      "opening_hours": {
+        "open_now": false,
+        "periods": [
+          {
+            "close": {
+              "day": 0,
+              "time": "1645",
+              "hours": 16,
+              "minutes": 45,
+              "nextDate": 1572209100000
+            },
+            "open": {
+              "day": 0,
+              "time": "1300",
+              "hours": 13,
+              "minutes": 0,
+              "nextDate": 1572195600000
+            }
+          },
+          {
+            "close": {
+              "day": 1,
+              "time": "1745",
+              "hours": 17,
+              "minutes": 45,
+              "nextDate": 1572299100000
+            },
+            "open": {
+              "day": 1,
+              "time": "1000",
+              "hours": 10,
+              "minutes": 0,
+              "nextDate": 1572271200000
+            }
+          },
+          {
+            "close": {
+              "day": 2,
+              "time": "1945",
+              "hours": 19,
+              "minutes": 45,
+              "nextDate": 1572392700000
+            },
+            "open": {
+              "day": 2,
+              "time": "1000",
+              "hours": 10,
+              "minutes": 0,
+              "nextDate": 1572357600000
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "1945",
+              "hours": 19,
+              "minutes": 45,
+              "nextDate": 1571874300000
+            },
+            "open": {
+              "day": 3,
+              "time": "1000",
+              "hours": 10,
+              "minutes": 0,
+              "nextDate": 1571839200000
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "1745",
+              "hours": 17,
+              "minutes": 45,
+              "nextDate": 1571953500000
+            },
+            "open": {
+              "day": 4,
+              "time": "1000",
+              "hours": 10,
+              "minutes": 0,
+              "nextDate": 1571925600000
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1745",
+              "hours": 17,
+              "minutes": 45,
+              "nextDate": 1572039900000
+            },
+            "open": {
+              "day": 5,
+              "time": "1000",
+              "hours": 10,
+              "minutes": 0,
+              "nextDate": 1572012000000
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1745",
+              "hours": 17,
+              "minutes": 45,
+              "nextDate": 1572126300000
+            },
+            "open": {
+              "day": 6,
+              "time": "1000",
+              "hours": 10,
+              "minutes": 0,
+              "nextDate": 1572098400000
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: 10:00 am – 5:45 pm",
+          "Tuesday: 10:00 am – 7:45 pm",
+          "Wednesday: 10:00 am – 7:45 pm",
+          "Thursday: 10:00 am – 5:45 pm",
+          "Friday: 10:00 am – 5:45 pm",
+          "Saturday: 10:00 am – 5:45 pm",
+          "Sunday: 1:00 – 4:45 pm"
+        ]
+      },
+      "photos": [
+        {
+          "height": 3265,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/117784216349813805439/photos\">Alessandro Ferroni</a>"
+          ],
+          "width": 4898
+        },
+        {
+          "height": 3120,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/109098064820951265324/photos\">Jarrett Embry</a>"
+          ],
+          "width": 4160
+        },
+        {
+          "height": 3000,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/104170788021024491533/photos\">Ivan Sanchez</a>"
+          ],
+          "width": 4000
+        },
+        {
+          "height": 4160,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/100873294229536788736/photos\">JB JB</a>"
+          ],
+          "width": 3120
+        },
+        {
+          "height": 1600,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/109687704055000692975/photos\">Michal Vorlíček</a>"
+          ],
+          "width": 1200
+        },
+        {
+          "height": 5312,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/100390015639858875632/photos\">Trina Kirk</a>"
+          ],
+          "width": 2988
+        },
+        {
+          "height": 4032,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/113816073629686740342/photos\">Eliot A</a>"
+          ],
+          "width": 3024
+        },
+        {
+          "height": 3024,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/103463813740590013470/photos\">Joshua Saunders</a>"
+          ],
+          "width": 4032
+        },
+        {
+          "height": 1067,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/105787647052433885325/photos\">Jonathan Letzter</a>"
+          ],
+          "width": 1600
+        },
+        {
+          "height": 4032,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/104426111617489256126/photos\">Q여운삼식이</a>"
+          ],
+          "width": 3024
+        }
+      ],
+      "place_id": "ChIJqaiomQBZwokRTHOaUG7fUTs",
+      "plus_code": {
+        "compound_code": "Q239+73 New York, United States",
+        "global_code": "87G8Q239+73"
+      },
+      "price_level": 0,
+      "rating": 4.699999999999999,
+      "reference": "ChIJqaiomQBZwokRTHOaUG7fUTs",
+      "reviews": [
+        {
+          "author_name": "Lucais Horsley",
+          "author_url": "https://www.google.com/maps/contrib/115863313921434689660/reviews",
+          "language": "en",
+          "profile_photo_url": "https://lh4.googleusercontent.com/-MmvZnpG5w3U/AAAAAAAAAAI/AAAAAAAAAAA/ACHi3rf5ZeoFrAtDtBD8ov9ODjmkkyi0wg/s128-c0x00000000-cc-rp-mo-ba5/photo.jpg",
+          "rating": 5,
+          "relative_time_description": "in the last week",
+          "text": "This is one of several research libraries in NYC. Entry is free and you can explore at your leisure or plan ahead and arrive early enough to do a docent led, one hour tour. There are so many treasures- the architecture of the building, the interiors of many rooms, the actual books and maps and special exhibits. This is a beautiful library building with tons of marble, just a few steps away from Grand Central Station. If you are visiting the area and would like to do research in the library, you can apply for a library card on-line. Please note, if you are carrying luggage you will not be allowed in the building. Loved everything about it!",
+          "time": 1571623040
+        },
+        {
+          "author_name": "Simon Landman",
+          "author_url": "https://www.google.com/maps/contrib/113563784563757265491/reviews",
+          "language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/AAuE7mB1PTYwHQUc_UQ7pLcJANE4azBA9rzlvMVUx-HTJA=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "2 months ago",
+          "text": "Super impressive building with long and distinguished history. This is a great place to visit and a must see for those interested in architecture and history. For tourists, there’s a lot of beautiful floors and marble pillars, great photo opportunities, old paintings, and just very cool long old halls. For those more initiated (which I am not), there’s lots of history here, and thousands and thousands of books. It’s a functioning library too, so you can ask the librarians for help researching things. They have extensive records and statistic books there. Either way, an amazing place to visit. Can see it in about 30 minutes if you’re in a rush.",
+          "time": 1566262091
+        },
+        {
+          "author_name": "Rodrigo Bravo",
+          "author_url": "https://www.google.com/maps/contrib/104002068721853906432/reviews",
+          "language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/AAuE7mBos7iQKHQx5D6jYT-HaT78nBnAD3uDqCEtpbxQu60=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "a month ago",
+          "text": "Deep in the bustling metropolis of NYC is a building that towers over Bryant Park and provides a stark contrast to the hyperactivity a few blocks away at Times Square.\n\nThe New York Public Library offers a sanctuary to those who may feel overwhelmed, beleaguered, even fatigued from the constant light switch stuck at \"ON\" that is the Big Apple.\n\nThe library features one of the largest quiet reading rooms I have ever seen. I wasn't even brave enough to snap a pic fearing that it would create unwanted noise. Its impressive. For the crowd adverse, they offer even more intimate reading rooms which provide a much needed separation (and Wifi) from the crowds. \n\nThe featured exhibits are impressive. The original Winnie the Pooh collection is notable. Some people write that its awkward to go without kids but I don't think it's so.\n\nIts directly behind Bryant Park; with various food options, this is a fantastic afternoon adventure and worth the trip.\n\nTip: You can take a book to the patio and enjoy a read by the park.",
+          "time": 1568654205
+        },
+        {
+          "author_name": "A & C",
+          "author_url": "https://www.google.com/maps/contrib/115718793167537832516/reviews",
+          "language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/-5vvEyttOtWM/AAAAAAAAAAI/AAAAAAAAAAA/ACHi3rdPu0G1lQvwMJffaZ4hTAb2r1panw/s128-c0x00000000-cc-rp-mo-ba3/photo.jpg",
+          "rating": 5,
+          "relative_time_description": "a month ago",
+          "text": "If you’re visiting NYC and want to see old architecture for free, this is highly recommended. Easy to walk to from Grand Central, and you’re welcome to browse freely. For Winnie the Pooh fans - there’s a display of the original stuffed animals that belonged to the real Christopher Robin. If you’re a fan or your kids love Winnie the Pooh, this is a must do!",
+          "time": 1567511287
+        },
+        {
+          "author_name": "Anne Fernandena",
+          "author_url": "https://www.google.com/maps/contrib/115090547023508876661/reviews",
+          "language": "en",
+          "profile_photo_url": "https://lh6.googleusercontent.com/-Cnq50TUzv6Y/AAAAAAAAAAI/AAAAAAAAAAA/ACHi3rf0MrAqRIEVxjA29hoANb6GdokmpQ/s128-c0x00000000-cc-rp-mo-ba5/photo.jpg",
+          "rating": 5,
+          "relative_time_description": "a month ago",
+          "text": "Such a beautiful library! We took the audio tour and learned so much about the library and the different rooms. It was great to learn about and see the cool architecture. We took pictures with \"patience and fortitude\" lions. We were here right at 10 a.m. so it wasn't crowded at all. We came back past at night and it was beautiful in the evening as well.",
+          "time": 1567878605
+        }
+      ],
+      "scope": "GOOGLE",
+      "types": [
+        "library",
+        "tourist_attraction",
+        "point_of_interest",
+        "establishment"
+      ],
+      "url": "https://maps.google.com/?cid=4274443186243007308",
+      "user_ratings_total": 2637,
+      "utc_offset": -240,
+      "vicinity": "476 5th Avenue, New York",
+      "website": "http://www.nypl.org/locations/schwarzman",
+      "html_attributions": null,
+      "utc_offset_minutes": -240
+    }
+  }
+}
