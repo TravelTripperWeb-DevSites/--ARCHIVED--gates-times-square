@@ -1,0 +1,21 @@
+{
+  "name": {
+    "required": true
+  },
+  "category": {
+    "type": "model",
+    "multiple": true,
+    "display_field": "name",
+    "model_name": "attraction_categories"
+  },
+  "image": {
+    "type": "image",
+    "label": "Attractions Image"
+  },
+  "location": {
+    "type": "location"
+  },
+  "order": {
+    "type": "order"
+  }
+}
