@@ -2,7 +2,7 @@
   {
     "_template": "1_col",
     "html": {
-      "content": "<h2 class=\"h3 pb-3\">Hotels in Manhattan Don&rsquo;t Get Better</h2>\n<p>As you&rsquo;ll see in the gallery below, we deliver the total package. Beautiful interiors, comfortable rooms, and the perfect location within walking distance of too many sights and restaurants to name. View our accommodations and check out our special offers to start planning your New York adventure today.</p>"
+      "content": "<h2 class=\"h3 pb-3\">Hotels in Manhattan Don&rsquo;t Get Better</h2>\n<p>As you&rsquo;ll see in the gallery below, we deliver the total package. Beautiful interiors, <a title=\"Rooms\" href=\"../rooms/\">comfortable rooms</a>, and the perfect location within walking distance of too many sights and restaurants to name. View our accommodations and check out our <a title=\"Special Offers\" href=\"../offers/\">special offers</a> to start planning your New York adventure today.</p>"
     },
     "advanced_options": {
       "custom_classes": "text-center"
