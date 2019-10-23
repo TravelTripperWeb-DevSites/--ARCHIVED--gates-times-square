@@ -1,0 +1,369 @@
+{
+  "order": 6,
+  "name": "The Museum of Modern Art",
+  "location": {
+    "name": "The Museum of Modern Art",
+    "address": "11 W 53rd St, New York, NY 10019, USA",
+    "phone": "(212) 708-9400",
+    "place_id": "ChIJKxDbe_lYwokRVf__s8CPn-o",
+    "reference": "ChIJKxDbe_lYwokRVf__s8CPn-o",
+    "latitude": 40.7614327,
+    "longitude": -73.97762160000002,
+    "google_place": {
+      "address_components": [
+        {
+          "long_name": "11",
+          "short_name": "11",
+          "types": [
+            "street_number"
+          ]
+        },
+        {
+          "long_name": "West 53rd Street",
+          "short_name": "W 53rd St",
+          "types": [
+            "route"
+          ]
+        },
+        {
+          "long_name": "Manhattan",
+          "short_name": "Manhattan",
+          "types": [
+            "sublocality_level_1",
+            "sublocality",
+            "political"
+          ]
+        },
+        {
+          "long_name": "New York",
+          "short_name": "New York",
+          "types": [
+            "locality",
+            "political"
+          ]
+        },
+        {
+          "long_name": "New York County",
+          "short_name": "New York County",
+          "types": [
+            "administrative_area_level_2",
+            "political"
+          ]
+        },
+        {
+          "long_name": "New York",
+          "short_name": "NY",
+          "types": [
+            "administrative_area_level_1",
+            "political"
+          ]
+        },
+        {
+          "long_name": "United States",
+          "short_name": "US",
+          "types": [
+            "country",
+            "political"
+          ]
+        },
+        {
+          "long_name": "10019",
+          "short_name": "10019",
+          "types": [
+            "postal_code"
+          ]
+        }
+      ],
+      "adr_address": "<span class=\"street-address\">11 W 53rd St</span>, <span class=\"locality\">New York</span>, <span class=\"region\">NY</span> <span class=\"postal-code\">10019</span>, <span class=\"country-name\">USA</span>",
+      "formatted_address": "11 W 53rd St, New York, NY 10019, USA",
+      "formatted_phone_number": "(212) 708-9400",
+      "geometry": {
+        "location": {
+          "lat": 40.7614327,
+          "lng": -73.97762160000002
+        },
+        "viewport": {
+          "south": 40.76030181970849,
+          "west": -73.97883123029152,
+          "north": 40.76299978029149,
+          "east": -73.9761332697085
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/museum-71.png",
+      "id": "05fd8501e2532c0ea3033bd3f3a282ffff502863",
+      "international_phone_number": "+1 212-708-9400",
+      "name": "The Museum of Modern Art",
+      "opening_hours": {
+        "open_now": false,
+        "periods": [
+          {
+            "close": {
+              "day": 0,
+              "time": "1730",
+              "hours": 17,
+              "minutes": 30,
+              "nextDate": 1572211800000
+            },
+            "open": {
+              "day": 0,
+              "time": "1000",
+              "hours": 10,
+              "minutes": 0,
+              "nextDate": 1572184800000
+            }
+          },
+          {
+            "close": {
+              "day": 1,
+              "time": "1730",
+              "hours": 17,
+              "minutes": 30,
+              "nextDate": 1572298200000
+            },
+            "open": {
+              "day": 1,
+              "time": "1000",
+              "hours": 10,
+              "minutes": 0,
+              "nextDate": 1572271200000
+            }
+          },
+          {
+            "close": {
+              "day": 2,
+              "time": "1730",
+              "hours": 17,
+              "minutes": 30,
+              "nextDate": 1572384600000
+            },
+            "open": {
+              "day": 2,
+              "time": "1000",
+              "hours": 10,
+              "minutes": 0,
+              "nextDate": 1572357600000
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "1730",
+              "hours": 17,
+              "minutes": 30,
+              "nextDate": 1571866200000
+            },
+            "open": {
+              "day": 3,
+              "time": "1000",
+              "hours": 10,
+              "minutes": 0,
+              "nextDate": 1571839200000
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "1730",
+              "hours": 17,
+              "minutes": 30,
+              "nextDate": 1571952600000
+            },
+            "open": {
+              "day": 4,
+              "time": "1000",
+              "hours": 10,
+              "minutes": 0,
+              "nextDate": 1571925600000
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "2100",
+              "hours": 21,
+              "minutes": 0,
+              "nextDate": 1572051600000
+            },
+            "open": {
+              "day": 5,
+              "time": "1000",
+              "hours": 10,
+              "minutes": 0,
+              "nextDate": 1572012000000
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1730",
+              "hours": 17,
+              "minutes": 30,
+              "nextDate": 1572125400000
+            },
+            "open": {
+              "day": 6,
+              "time": "1000",
+              "hours": 10,
+              "minutes": 0,
+              "nextDate": 1572098400000
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: 10:00 am – 5:30 pm",
+          "Tuesday: 10:00 am – 5:30 pm",
+          "Wednesday: 10:00 am – 5:30 pm",
+          "Thursday: 10:00 am – 5:30 pm",
+          "Friday: 10:00 am – 9:00 pm",
+          "Saturday: 10:00 am – 5:30 pm",
+          "Sunday: 10:00 am – 5:30 pm"
+        ]
+      },
+      "photos": [
+        {
+          "height": 1243,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/108601826331581658642/photos\">The Museum of Modern Art</a>"
+          ],
+          "width": 2529
+        },
+        {
+          "height": 3648,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/115387694462259898016/photos\">Marcin Kosmenda</a>"
+          ],
+          "width": 2736
+        },
+        {
+          "height": 2448,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/113916171625068985182/photos\">Yosuke Murakami</a>"
+          ],
+          "width": 3264
+        },
+        {
+          "height": 4608,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/114008778530387073936/photos\">James Smith</a>"
+          ],
+          "width": 3456
+        },
+        {
+          "height": 3968,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/111485497780550057934/photos\">JJ Wong</a>"
+          ],
+          "width": 2976
+        },
+        {
+          "height": 4048,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/113261718205305321242/photos\">Vlad Balan</a>"
+          ],
+          "width": 3036
+        },
+        {
+          "height": 2976,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/108401485566812695432/photos\">Patrick Kuan</a>"
+          ],
+          "width": 3968
+        },
+        {
+          "height": 4032,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/104555688973852754083/photos\">Byren Innes</a>"
+          ],
+          "width": 3024
+        },
+        {
+          "height": 3024,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/107955927790462833442/photos\">Shoshi B</a>"
+          ],
+          "width": 4032
+        },
+        {
+          "height": 3648,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/104074710214847688905/photos\">Nikolas Leo</a>"
+          ],
+          "width": 2736
+        }
+      ],
+      "place_id": "ChIJKxDbe_lYwokRVf__s8CPn-o",
+      "plus_code": {
+        "compound_code": "Q26C+HX New York, United States",
+        "global_code": "87G8Q26C+HX"
+      },
+      "rating": 4.6,
+      "reference": "ChIJKxDbe_lYwokRVf__s8CPn-o",
+      "reviews": [
+        {
+          "author_name": "Dolly Thurman",
+          "author_url": "https://www.google.com/maps/contrib/104318844506111880331/reviews",
+          "language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/AAuE7mDpPel5NbVh9lT5a3ojjFcxGP8f78hZgdmDnpxd=s128-c0x00000000-cc-rp-mo",
+          "rating": 4,
+          "relative_time_description": "2 months ago",
+          "text": "This is one of the great museum I've been admiring. We have been here many times and it never failed to amazed of the arts displayed. It never gets old and I'm always in awe every time we visit. Their courtyard is also beautiful, sometimes people have meetings and other gatherings there. Pretty neat. They are in the works for expanding the museum and I can't wait to go back and see the new additions. I am looking forward to my next visit with friends!",
+          "time": 1564450120
+        },
+        {
+          "author_name": "Lucais Horsley",
+          "author_url": "https://www.google.com/maps/contrib/115863313921434689660/reviews",
+          "language": "en",
+          "profile_photo_url": "https://lh4.googleusercontent.com/-MmvZnpG5w3U/AAAAAAAAAAI/AAAAAAAAAAA/ACHi3rf5ZeoFrAtDtBD8ov9ODjmkkyi0wg/s128-c0x00000000-cc-rp-mo-ba5/photo.jpg",
+          "rating": 5,
+          "relative_time_description": "in the last week",
+          "text": "The new expansion of the museum is astonishingly good. The galleries have been completely reorganized, with less emphasis on chronology and more focus on themes and artistic relationships that helps you see even familiar works in a new light. The expansion lets the museum show rarely seen works from what likely is the world's greatest collection of modern art. Even if you've been there before, go again - it's a completely new experience.",
+          "time": 1571593592
+        },
+        {
+          "author_name": "daniel georges",
+          "author_url": "https://www.google.com/maps/contrib/107807883318301057868/reviews",
+          "language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/-JJvoEUFcUTU/AAAAAAAAAAI/AAAAAAAAAAA/ACHi3rde7GL3OZy6QTgCbMVk_b9Ikk7w4w/s128-c0x00000000-cc-rp-mo-ba2/photo.jpg",
+          "rating": 1,
+          "relative_time_description": "2 months ago",
+          "text": "I had great expectations for what would have been my third visit there. Alas, the museum was closed until October 21, 2019! As much as I understand the need for refurbishment, how can they choose summer, the time of the year when tourists are traveling, to do it? On top of it, lack of advertising of this led me to discover it just when arriving a few yards from the door. Therefore, I spent 1 day stop over and $ 300 hotel and taxi to and fro JFK for nothing. MoMA, and consequently NYC, you’ve lost my patronage for ever.",
+          "time": 1566386875
+        },
+        {
+          "author_name": "Linda Evans",
+          "author_url": "https://www.google.com/maps/contrib/102509333627316204495/reviews",
+          "language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/AAuE7mCIc7tOz-_VKaICfLgFhMRIVx-sF8F4Rc-nKnFa=s128-c0x00000000-cc-rp-mo",
+          "rating": 5,
+          "relative_time_description": "in the last week",
+          "text": "World class art. I've been visiting here my awhile life...I still remember my first visit where's my baby sister my mom and dad great aunt and uncle ... I must have just been at the end of three years old or the beginning of 4 years old",
+          "time": 1571705125
+        },
+        {
+          "author_name": "Ny Ny Nguyễn Phạm",
+          "author_url": "https://www.google.com/maps/contrib/114348989345350950297/reviews",
+          "language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/AAuE7mAhNETfRGAb1FmzjbmQkS3ztZf1yS62aXQQPIY9ULg=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 4,
+          "relative_time_description": "in the last week",
+          "text": "Well organized museum; which made it easy to go through all galleries.\nTheir creativity room is pretty cool, esp for kids. Nice museum stores.\nThere are paintings of Van Gogh, Monet and Klimt...",
+          "time": 1571788389
+        }
+      ],
+      "scope": "GOOGLE",
+      "types": [
+        "tourist_attraction",
+        "museum",
+        "point_of_interest",
+        "establishment"
+      ],
+      "url": "https://maps.google.com/?cid=16906389583988522837",
+      "user_ratings_total": 27702,
+      "utc_offset": -240,
+      "vicinity": "11 West 53rd Street, New York",
+      "website": "https://www.moma.org/",
+      "html_attributions": null,
+      "utc_offset_minutes": -240
+    }
+  }
+}
