@@ -167,6 +167,10 @@
     @include transition(.3s);
   }
 
+  .greedy-nav__links {
+    width: 100%;
+  }
+
   .greedy__hidden-links {
     right: 0;
     left: 0;
