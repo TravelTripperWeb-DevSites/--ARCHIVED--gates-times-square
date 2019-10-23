@@ -20,7 +20,7 @@
     "advanced_options": {
       "custom_classes": "about-wrap mb-5"
     },
-    "col1_type": "image",
+    "col1_type": "html",
     "col1_image": {
       "content": {
         "name": "iStock-1142445185",
