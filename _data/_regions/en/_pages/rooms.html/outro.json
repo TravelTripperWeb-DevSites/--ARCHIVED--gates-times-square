@@ -3,6 +3,9 @@
     "_template": "1_col",
     "html": {
       "content": "<p style=\"text-align: center;\">Please note that our rooms are ADA compliant under the Department of Justice ADA Title III Regulation 28 CFR Part 36, 1991. ADA rooms are available. We also invite you to view our Accessibility Statement.</p>"
+    },
+    "advanced_options": {
+      "custom_classes": "ada-statement"
     }
   }
 ]
