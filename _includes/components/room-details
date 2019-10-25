@@ -61,10 +61,10 @@
     </div>
     <div class="room-info__gallery">
       <div class="room-info__gallery__wrap">
-        <img src="//res.cloudinary.com/traveltripperweb/image/upload/c_limit,h_2500,w_2500/v1566284866/fkgeezlfwc7mvkkwld6y.jpg" alt="Take a visual gallery">
+        <img src="//res.cloudinary.com/traveltripperweb/image/upload/c_limit,h_2500,w_2500/v1566284866/rmuck1fedv4jawvjr0oz.jpg" alt="Take a visual gallery">
         <div class="floating">
-          <p class="h3 light">Tour the Gates Hotel Times Square</p>
-          <a href="/galley/" class="btn btn--secondary btn--secondary--light">View Gallery</a>
+          <p class="h3 light">Tour the OYO Hotel Times Square</p>
+          <a href="/gallery/" class="btn btn--secondary btn--secondary--light">View Gallery</a>
         </div>
       </div>
     </div>
@@ -72,14 +72,17 @@
   <div class="room-info__amenities">
     <div class="room-info__amenities__image">
       <div class="room-info__amenities__image__wrap">
-        <img src="//res.cloudinary.com/traveltripperweb/image/upload/c_limit,h_2500,w_2500/v1566285818/y9pmqvsrse5lph2sy2bi.jpg" alt="Gates Hotel Times Square Amenities">
+        <img src="//res.cloudinary.com/traveltripperweb/image/upload/c_limit,h_2500,w_2500/v1566470087/wxry7cfjdfhbhqobudfw.jpg" alt="OYO Hotel Times Square Amenities">
       </div>
     </div>
     <div class="room-info__amenities__content">
       <div class="room-info__amenities__content__row">
         <div class="amenities-right">
+          {% comment %}
+          // Removed as per QA
           <p class="overline overline--small">Enjoy the following</p>
-          <p class="h2">Room<br>Amenities</p>
+          {% endcomment %}
+          <p class="h2">RELAX<br>IN<br/>COMFORT</p>
         </div>
         <div class="amenities-left" {% if sync %}ttweb-room-component="RoomAmenities"{% endif %}>
           <ul>
@@ -100,7 +103,7 @@
 {% if rooms.size >= 3 %}
   <section class="other-items-slider bg-white">
     <div class="other-items-slider__container">
-      <h2 class="h3">Other Rooms Form THE GATES HOTEL TIMES SQUARE</h2>
+      <h2 class="h3">Other Rooms Form THE OYO HOTEL TIMES SQUARE</h2>
       <div class="room-details-carousel align-items-stretch" role="listbox">
         {% for room in rooms %}
           <div class="other-items-slider__item text-center" ttweb-component="Room" data-tt-selected-room="{{room.reztrip_room_id}}" role="option">
