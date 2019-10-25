@@ -64,7 +64,7 @@
         <img src="//res.cloudinary.com/traveltripperweb/image/upload/c_limit,h_2500,w_2500/v1566284866/rmuck1fedv4jawvjr0oz.jpg" alt="Take a visual gallery">
         <div class="floating">
           <p class="h3 light">Tour the OYO Hotel Times Square</p>
-          <a href="/galley/" class="btn btn--secondary btn--secondary--light">View Gallery</a>
+          <a href="/gallery/" class="btn btn--secondary btn--secondary--light">View Gallery</a>
         </div>
       </div>
     </div>
@@ -78,8 +78,11 @@
     <div class="room-info__amenities__content">
       <div class="room-info__amenities__content__row">
         <div class="amenities-right">
+          {% comment %}
+          // Removed as per QA
           <p class="overline overline--small">Enjoy the following</p>
-          <p class="h2">Room<br>Amenities</p>
+          {% endcomment %}
+          <p class="h2">RELAX<br>IN<br/>COMFORT</p>
         </div>
         <div class="amenities-left" {% if sync %}ttweb-room-component="RoomAmenities"{% endif %}>
           <ul>
