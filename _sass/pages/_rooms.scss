@@ -68,11 +68,16 @@
 
     &__name {
       margin-bottom: 24px;
+      @include media-breakpoint-up(md) {
+        height: 48px;
+      }
     }
 
     &__short-description {
       @include media-breakpoint-up(md) {
         max-width: 90%;
+        height: 72px;
+        overflow: hidden;
       }
     }
 
@@ -90,6 +95,10 @@
       span {
         display: inline-block;
         margin-right: 10px;
+      }
+
+      @include media-breakpoint-up(md) {
+        height: 48px;
       }
     }
   }
