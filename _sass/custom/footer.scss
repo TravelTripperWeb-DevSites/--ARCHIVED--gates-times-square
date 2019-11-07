@@ -83,10 +83,14 @@
     }
 
     .credits {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
       margin-top: 24px;
 
       img {
-        max-width: 170px;
+        max-width: 100px;
       }
     }
 
