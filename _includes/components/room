@@ -17,7 +17,7 @@
       <div class="c-room__rate" ttweb-room-component="CrossOutRateContainer" data-tt-show-error="true"></div>
     </div>
     <div tabindex="0">
-      <p class="c-room__short-description" style="height: 150px;" {% if sync %}ttweb-room-component="RoomShortDescription"{% endif %}>
+      <p class="c-room__short-description" style="height: 110px;" {% if sync %}ttweb-room-component="RoomShortDescription"{% endif %}>
         {{ room.short_description }}
       </p>
     </div>
