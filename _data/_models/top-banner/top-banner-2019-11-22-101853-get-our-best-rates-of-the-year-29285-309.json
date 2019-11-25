@@ -1,12 +1,12 @@
 {
   "featured": true,
-  "title": "Get Our Best Rates of the Year",
-  "banner-text": "<p><strong>Get Our Best Rates of the Year</strong></p>",
+  "title": "Limited-Time Black Friday & Cyber Monday Savings!",
+  "banner-text": "<p><strong>Limited-Time Black Friday & Cyber Monday Savings!</strong></p>",
   "banner-text-color": "#ffffff",
   "button": true,
   "button-text": "Book Now",
   "button-text-color": "#ffffff",
-  "button-link": "https://oyotimessquare.reztrip.com",
+  "button-link": "https://oyotimessquare.reztrip.com/ext/promoRate?property=2117&mode=b&pm=true&sr=530865&vr=3",
   "button-border-color": "#ffffff",
   "background-color": "#e1251b"
 }
